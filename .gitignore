@@ -1,0 +1,54 @@
+# Local editor and assistant state
+.claude/
+.idea/
+.vscode/
+
+# Python cache and notebook checkpoints
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Virtual environments and local env files
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Logs, process markers, temporary files
+*.log
+*.pid
+_tmp*.txt
+~$*.docx
+
+# Large raw/intermediate datasets
+our_data/
+**/processed_clean/
+*.npy
+*.npz
+
+# Model checkpoints and serialized pipelines
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.joblib
+
+# Generated experiment outputs that should be reproducible from scripts
+**/target_test_predictions*.csv
+**/*_history.csv
+**/candidate_history.csv
+**/*_results.xlsx
+
+# Independent external projects kept locally, not part of this paper repo
+PaperSpine-main/
+ml-intern-main/
+
+# Duplicate copy of the external baseline project
+HAIRLAB-Health_status_prediction-8e9073e/
+
+# Heavy external baseline artifacts; keep source code if needed
+Health_status_prediction-main/data/
+Health_status_prediction-main/model/
+Health_status_prediction-main/*.ipynb
