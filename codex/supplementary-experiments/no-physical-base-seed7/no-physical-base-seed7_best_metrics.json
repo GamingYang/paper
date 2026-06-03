@@ -1,0 +1,114 @@
+{
+  "result": {
+    "model": "no-physical-base-seed7",
+    "seed": 7,
+    "variant": "no-physical-base",
+    "best_epoch": 18,
+    "target_adapt_rmse": 0.015477869850670829,
+    "target_test_rmse": 0.028313859048084217,
+    "target_test_macro_rmse": 0.02502216761622663,
+    "target_test_mae": 0.01820157654583454,
+    "target_test_mape": 1.926409125328064,
+    "elapsed_min": 14.4
+  },
+  "target_test_cells": [
+    {
+      "battery_index": 69,
+      "rmse": 0.027725847454449372,
+      "mae": 0.01726059801876545,
+      "n_points": 1702
+    },
+    {
+      "battery_index": 70,
+      "rmse": 0.017381119612168632,
+      "mae": 0.01213359646499157,
+      "n_points": 1697
+    },
+    {
+      "battery_index": 71,
+      "rmse": 0.018759454017644634,
+      "mae": 0.011155280284583569,
+      "n_points": 1848
+    },
+    {
+      "battery_index": 72,
+      "rmse": 0.012237447752499487,
+      "mae": 0.006342469714581966,
+      "n_points": 1811
+    },
+    {
+      "battery_index": 73,
+      "rmse": 0.013618776975087897,
+      "mae": 0.011209595017135143,
+      "n_points": 2030
+    },
+    {
+      "battery_index": 74,
+      "rmse": 0.045343411523882,
+      "mae": 0.04196644946932793,
+      "n_points": 2285
+    },
+    {
+      "battery_index": 75,
+      "rmse": 0.015766796797237373,
+      "mae": 0.011282291263341904,
+      "n_points": 1783
+    },
+    {
+      "battery_index": 76,
+      "rmse": 0.04934448679684364,
+      "mae": 0.03150539472699165,
+      "n_points": 1400
+    }
+  ],
+  "target_adapt_cells": [
+    {
+      "battery_index": 61,
+      "rmse": 0.014361410630496391,
+      "mae": 0.00991452019661665,
+      "n_points": 2057
+    },
+    {
+      "battery_index": 62,
+      "rmse": 0.01373103552845001,
+      "mae": 0.011774769052863121,
+      "n_points": 2143
+    },
+    {
+      "battery_index": 63,
+      "rmse": 0.012379782324557127,
+      "mae": 0.0069087170995771885,
+      "n_points": 1905
+    },
+    {
+      "battery_index": 64,
+      "rmse": 0.01354841598920761,
+      "mae": 0.008389599621295929,
+      "n_points": 1975
+    },
+    {
+      "battery_index": 65,
+      "rmse": 0.01716718882415508,
+      "mae": 0.01252051442861557,
+      "n_points": 2168
+    },
+    {
+      "battery_index": 66,
+      "rmse": 0.015612032005340878,
+      "mae": 0.009271873161196709,
+      "n_points": 1742
+    },
+    {
+      "battery_index": 67,
+      "rmse": 0.008362657355045697,
+      "mae": 0.005737517960369587,
+      "n_points": 2012
+    },
+    {
+      "battery_index": 68,
+      "rmse": 0.022993821821041628,
+      "mae": 0.018478648737072945,
+      "n_points": 2308
+    }
+  ]
+}

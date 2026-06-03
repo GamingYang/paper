@@ -1,0 +1,14 @@
+{
+  "stage": "done",
+  "status": "success",
+  "elapsed_seconds": 583.7290849685669,
+  "time_limit_seconds": 3600,
+  "outputs": {
+    "suite_dir": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1",
+    "report_docx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\external_baseline_suite_v1_report.docx",
+    "run_log_docx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\external_baseline_suite_v1_run_log.docx",
+    "summary_xlsx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\external_baseline_suite_v1_summary.xlsx",
+    "run_json": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\external_baseline_suite_v1_summary.json"
+  },
+  "run_json": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\external_baseline_suite_v1_summary.json"
+}

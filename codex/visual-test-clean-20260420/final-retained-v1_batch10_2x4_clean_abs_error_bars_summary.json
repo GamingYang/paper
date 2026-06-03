@@ -1,0 +1,72 @@
+{
+  "model": "final-retained-v1",
+  "figure_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visual-test-clean-20260420\\final-retained-v1_batch10_2x4_clean_abs_error_bars.png",
+  "pooled_rmse_raw": 0.009499246001179452,
+  "macro_rmse_raw": 0.008300783386106398,
+  "mae_raw": 0.005704157908200628,
+  "ci_half_width_95": 0.01400325749069452,
+  "display_smooth": true,
+  "savgol_window": 71,
+  "savgol_poly": 3,
+  "error_type": "absolute_error_bars_nonnegative",
+  "error_ylim": 0.0998231381177904,
+  "note": "Metrics use raw predictions. Only the plotted prediction and band are display-smoothed.",
+  "cell_metrics": [
+    {
+      "battery_index": 69,
+      "rmse_raw": 0.010832305836243014,
+      "mae_raw": 0.006457126028529343,
+      "max_abs_error": 0.04910993576049805,
+      "n_points": 1702
+    },
+    {
+      "battery_index": 70,
+      "rmse_raw": 0.006030152006561126,
+      "mae_raw": 0.004093479323401196,
+      "max_abs_error": 0.026185929775238148,
+      "n_points": 1697
+    },
+    {
+      "battery_index": 71,
+      "rmse_raw": 0.006424834799822123,
+      "mae_raw": 0.00392808300721181,
+      "max_abs_error": 0.031684935092926025,
+      "n_points": 1848
+    },
+    {
+      "battery_index": 72,
+      "rmse_raw": 0.005718316586264782,
+      "mae_raw": 0.0033740783382818136,
+      "max_abs_error": 0.031561851501464844,
+      "n_points": 1811
+    },
+    {
+      "battery_index": 73,
+      "rmse_raw": 0.004200957310206116,
+      "mae_raw": 0.0028168770480038493,
+      "max_abs_error": 0.02162182331085205,
+      "n_points": 2030
+    },
+    {
+      "battery_index": 74,
+      "rmse_raw": 0.017100199497557946,
+      "mae_raw": 0.013214759571025357,
+      "max_abs_error": 0.04138296842575084,
+      "n_points": 2285
+    },
+    {
+      "battery_index": 75,
+      "rmse_raw": 0.005373110540051342,
+      "mae_raw": 0.0037361481720586853,
+      "max_abs_error": 0.021985650062561035,
+      "n_points": 1783
+    },
+    {
+      "battery_index": 76,
+      "rmse_raw": 0.010726390512144735,
+      "mae_raw": 0.006534262938158855,
+      "max_abs_error": 0.07359540462493908,
+      "n_points": 1400
+    }
+  ]
+}

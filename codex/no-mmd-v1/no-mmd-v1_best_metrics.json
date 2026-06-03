@@ -1,0 +1,87 @@
+{
+  "config": {
+    "model": "no-mmd-v1",
+    "description": "关闭生命周期自适应 MMD，保留物理基座、残差时序网络与 Attention。",
+    "python_executable": "D:\\Anaconda\\envs\\battery_project\\python.exe",
+    "device": "cuda",
+    "data_dir": "C:\\Users\\ROG\\Desktop\\paper\\PYthon训练代码\\processed_clean",
+    "seed": 42,
+    "best_epoch_selected_by_target_adapt": 102,
+    "best_target_adapt_rmse": 0.007138115608268116,
+    "final_target_test_rmse": 0.00967741744451629,
+    "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\no-mmd-v1\\no-mmd-v1_best_by_target_adapt.pt"
+  },
+  "metrics": [
+    {
+      "split": "target_adapt",
+      "pooled_rmse": 0.007138115608268116,
+      "macro_rmse": 0.006905303832894932,
+      "mae": 0.004860225599259138,
+      "mape_percent": 0.5153814554214478,
+      "role": "model_selection"
+    },
+    {
+      "split": "target_test",
+      "pooled_rmse": 0.00967741744451629,
+      "macro_rmse": 0.008721296235627948,
+      "mae": 0.005783881992101669,
+      "mape_percent": 0.6238259673118591,
+      "role": "final_blind_test_once"
+    }
+  ],
+  "compact_summary": {
+    "model": "no-mmd-v1",
+    "best_target_adapt_rmse": 0.007138115608268116,
+    "final_target_test_rmse": 0.00967741744451629
+  },
+  "target_test_cells": [
+    {
+      "battery_index": 69,
+      "rmse": 0.010504141067221459,
+      "mae": 0.006377760786563158,
+      "n_points": 1702
+    },
+    {
+      "battery_index": 70,
+      "rmse": 0.006173743991763531,
+      "mae": 0.003989021759480238,
+      "n_points": 1697
+    },
+    {
+      "battery_index": 71,
+      "rmse": 0.007191924540557918,
+      "mae": 0.0038248414639383554,
+      "n_points": 1848
+    },
+    {
+      "battery_index": 72,
+      "rmse": 0.006681526656166379,
+      "mae": 0.0043738535605371,
+      "n_points": 1811
+    },
+    {
+      "battery_index": 73,
+      "rmse": 0.005168918841877722,
+      "mae": 0.0034679428208619356,
+      "n_points": 2030
+    },
+    {
+      "battery_index": 74,
+      "rmse": 0.01603342900603259,
+      "mae": 0.012544088996946812,
+      "n_points": 2285
+    },
+    {
+      "battery_index": 75,
+      "rmse": 0.004465073206954737,
+      "mae": 0.0033579294104129076,
+      "n_points": 1783
+    },
+    {
+      "battery_index": 76,
+      "rmse": 0.013551612574449244,
+      "mae": 0.007061540149152279,
+      "n_points": 1400
+    }
+  ]
+}

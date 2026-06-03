@@ -1,0 +1,103 @@
+{
+  "status": "success",
+  "elapsed_seconds": 583.7256140708923,
+  "device": "cuda",
+  "suite_dir": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1",
+  "new_external_results": [
+    {
+      "model": "physical-only-v1",
+      "label": "Pure cubic physical base",
+      "description": "Pure model-based baseline using only the cubic degradation function fitted on source domain.",
+      "protocol": "Scheme A: source fit for physical coefficients only; target-domain development set for reporting; target_test final once",
+      "best_epoch_selected_by_target_dev": 0,
+      "target_dev_metrics": {
+        "pooled_rmse": 0.026976499062769298,
+        "macro_rmse": 0.026855523141171532,
+        "mae": 0.023402774706482887,
+        "mape_percent": 2.414828300476074
+      },
+      "target_test_metrics": {
+        "pooled_rmse": 0.032649383958177326,
+        "macro_rmse": 0.03125047373140824,
+        "mae": 0.023745808750391006,
+        "mape_percent": 2.5142366886138916
+      },
+      "checkpoint_path": null,
+      "run_seconds": 0.0
+    },
+    {
+      "model": "lstm-baseline-v1",
+      "label": "LSTM baseline",
+      "description": "Pure data-driven recurrent baseline using sequence fragment plus normalized cycle position.",
+      "protocol": "Scheme A: source supervised training; target-domain development set for checkpoint selection; target_test final once",
+      "best_epoch_selected_by_target_dev": 15,
+      "target_dev_metrics": {
+        "pooled_rmse": 0.02752239017682538,
+        "macro_rmse": 0.027417953428922136,
+        "mae": 0.0232224278151989,
+        "mape_percent": 2.4157638549804688
+      },
+      "target_test_metrics": {
+        "pooled_rmse": 0.03274155885317735,
+        "macro_rmse": 0.03143807423876739,
+        "mae": 0.02352220192551613,
+        "mape_percent": 2.4993200302124023
+      },
+      "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\lstm-baseline-v1\\lstm-baseline-v1_best_by_target_dev.pt",
+      "run_seconds": 170.97507572174072
+    },
+    {
+      "model": "gru-baseline-v1",
+      "label": "GRU baseline",
+      "description": "Pure data-driven GRU baseline using sequence fragment plus normalized cycle position.",
+      "protocol": "Scheme A: source supervised training; target-domain development set for checkpoint selection; target_test final once",
+      "best_epoch_selected_by_target_dev": 14,
+      "target_dev_metrics": {
+        "pooled_rmse": 0.027316293598165328,
+        "macro_rmse": 0.027255075023736485,
+        "mae": 0.022685304284095764,
+        "mape_percent": 2.37015438079834
+      },
+      "target_test_metrics": {
+        "pooled_rmse": 0.03310894582149811,
+        "macro_rmse": 0.0319282561440226,
+        "mae": 0.023576674982905388,
+        "mape_percent": 2.510279655456543
+      },
+      "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\gru-baseline-v1\\gru-baseline-v1_best_by_target_dev.pt",
+      "run_seconds": 161.43687558174133
+    },
+    {
+      "model": "cnn-lstm-baseline-v1",
+      "label": "CNN-LSTM baseline",
+      "description": "Common CNN-LSTM baseline without explicit physical base, attention, or domain alignment.",
+      "protocol": "Scheme A: source supervised training; target-domain development set for checkpoint selection; target_test final once",
+      "best_epoch_selected_by_target_dev": 22,
+      "target_dev_metrics": {
+        "pooled_rmse": 0.00855505249105402,
+        "macro_rmse": 0.008415678132805115,
+        "mae": 0.005896043498069048,
+        "mape_percent": 0.628292441368103
+      },
+      "target_test_metrics": {
+        "pooled_rmse": 0.016074939648754012,
+        "macro_rmse": 0.014387066740468576,
+        "mae": 0.009299389086663723,
+        "mape_percent": 1.0039921998977661
+      },
+      "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\cnn-lstm-baseline-v1\\cnn-lstm-baseline-v1_best_by_target_dev.pt",
+      "run_seconds": 244.062025308609
+    }
+  ],
+  "issues": [
+    "lstm-baseline-v1: early stopping triggered at epoch 23 after 8 epochs without target-domain development improvement.",
+    "gru-baseline-v1: early stopping triggered at epoch 22 after 8 epochs without target-domain development improvement.",
+    "cnn-lstm-baseline-v1: early stopping triggered at epoch 30 after 8 epochs without target-domain development improvement."
+  ],
+  "outputs": {
+    "summary_xlsx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\external_baseline_suite_v1_summary.xlsx",
+    "report_docx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\external_baseline_suite_v1_report.docx",
+    "run_log_docx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\external_baseline_suite_v1_run_log.docx",
+    "progress_json": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\external_baseline_suite_v1_progress.json"
+  }
+}

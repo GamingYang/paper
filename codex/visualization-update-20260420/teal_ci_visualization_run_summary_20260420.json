@@ -1,0 +1,77 @@
+{
+  "status": "success",
+  "elapsed_seconds": 30.11038374900818,
+  "time_limit_seconds": 1800,
+  "device": "cuda",
+  "outputs": {
+    "out_dir": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420",
+    "figures": {
+      "final-retained-v1": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\figures\\final-retained-v1_batch10_blind_test_2x4_teal_ci_error.png",
+      "no-physical-base-v1": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\figures\\no-physical-base-v1_batch10_blind_test_2x4_teal_ci_error.png",
+      "no-mmd-v1": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\figures\\no-mmd-v1_batch10_blind_test_2x4_teal_ci_error.png",
+      "no-attention-v1": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\figures\\no-attention-v1_batch10_blind_test_2x4_teal_ci_error.png"
+    },
+    "summary_xlsx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\teal_ci_visualization_summary_20260420.xlsx",
+    "report_docx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\teal_ci_visualization_report_20260420.docx",
+    "progress_json": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\teal_ci_visualization_progress_20260420.json"
+  },
+  "overall": [
+    {
+      "model": "final-retained-v1",
+      "best_epoch": 140,
+      "target_adapt_rmse": 0.007234275916351256,
+      "target_test_rmse": 0.009499246123112539,
+      "target_test_mae": 0.0057041579857468605,
+      "target_test_mape_percent": 0.6103620529174805,
+      "development_residual_mean": -0.001137419487349689,
+      "development_residual_std": 0.007144519127905369,
+      "ci_half_width_95": 0.014003257490694523,
+      "ci_note": "Prediction band estimated as pred +/- 1.96 * std(residuals on Batch 9 target-domain development set).",
+      "figure_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\figures\\final-retained-v1_batch10_blind_test_2x4_teal_ci_error.png",
+      "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\final-retained-v1\\final-retained-v1_best_by_target_adapt.pt"
+    },
+    {
+      "model": "no-physical-base-v1",
+      "best_epoch": 138,
+      "target_adapt_rmse": 0.015617972988033678,
+      "target_test_rmse": 0.020716419371266184,
+      "target_test_mae": 0.013759463094174862,
+      "target_test_mape_percent": 1.4798561334609985,
+      "development_residual_mean": 0.0019202606054022908,
+      "development_residual_std": 0.015499948523938656,
+      "ci_half_width_95": 0.030379899106919767,
+      "ci_note": "Prediction band estimated as pred +/- 1.96 * std(residuals on Batch 9 target-domain development set).",
+      "figure_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\figures\\no-physical-base-v1_batch10_blind_test_2x4_teal_ci_error.png",
+      "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\no-physical-base-v1\\no-physical-base-v1_best_by_target_adapt.pt"
+    },
+    {
+      "model": "no-mmd-v1",
+      "best_epoch": 102,
+      "target_adapt_rmse": 0.007138115608268116,
+      "target_test_rmse": 0.00967741744451629,
+      "target_test_mae": 0.005783881992101669,
+      "target_test_mape_percent": 0.6238259673118591,
+      "development_residual_mean": 0.0009513864060863853,
+      "development_residual_std": 0.0070746466517448425,
+      "ci_half_width_95": 0.013866307437419892,
+      "ci_note": "Prediction band estimated as pred +/- 1.96 * std(residuals on Batch 9 target-domain development set).",
+      "figure_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\figures\\no-mmd-v1_batch10_blind_test_2x4_teal_ci_error.png",
+      "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\no-mmd-v1\\no-mmd-v1_best_by_target_adapt.pt"
+    },
+    {
+      "model": "no-attention-v1",
+      "best_epoch": 74,
+      "target_adapt_rmse": 0.009447252775600127,
+      "target_test_rmse": 0.011676698601473611,
+      "target_test_mae": 0.008145470172166824,
+      "target_test_mape_percent": 0.8618414402008057,
+      "development_residual_mean": -0.002856321632862091,
+      "development_residual_std": 0.00900538731366396,
+      "ci_half_width_95": 0.01765055913478136,
+      "ci_note": "Prediction band estimated as pred +/- 1.96 * std(residuals on Batch 9 target-domain development set).",
+      "figure_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\figures\\no-attention-v1_batch10_blind_test_2x4_teal_ci_error.png",
+      "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\no-attention-v1\\no-attention-v1_best_by_target_adapt.pt"
+    }
+  ],
+  "issues": []
+}

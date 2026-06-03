@@ -37,9 +37,13 @@ our_data/
 
 # Generated experiment outputs that should be reproducible from scripts
 **/target_test_predictions*.csv
+**/*target_test_predictions*.csv
 **/*_history.csv
 **/candidate_history.csv
 **/*_results.xlsx
+
+# Unrelated scratch tasks
+codex/bubble-sort-20260423/
 
 # Independent external projects kept locally, not part of this paper repo
 PaperSpine-main/

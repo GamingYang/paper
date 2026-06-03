@@ -1,0 +1,160 @@
+{
+  "summary": {
+    "run_name": "rul-quick-v1",
+    "status": "success",
+    "finished_at": "2026-05-28T19:45:45",
+    "python_executable": "D:\\Anaconda\\envs\\battery_project\\python.exe",
+    "device": "cuda",
+    "data_dir": "C:\\Users\\ROG\\Desktop\\paper\\PYthon训练代码\\processed_clean",
+    "seed": 42,
+    "epochs_requested": 20,
+    "epochs_finished": 11,
+    "max_steps_per_epoch": 60,
+    "best_epoch": 5,
+    "best_target_adapt_rmse_cycles": 168.5663757897019,
+    "final_target_test_rmse_cycles": 268.1623808441445,
+    "elapsed_seconds": 173.4274754524231,
+    "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\rul-quick-v1\\rul-quick-v1_best_by_target_adapt.pt",
+    "history_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\rul-quick-v1\\rul-quick-v1_history.csv",
+    "predictions_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\rul-quick-v1\\rul-quick-v1_target_test_predictions.csv",
+    "per_battery_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\rul-quick-v1\\rul-quick-v1_per_battery_metrics.csv",
+    "report_md": "C:\\Users\\ROG\\Desktop\\paper\\codex\\rul-quick-v1\\rul-quick-v1_report.md",
+    "rul_scale": 3000.0,
+    "global_max_cycle": 3000.0,
+    "soh_aux_weight": 0.05,
+    "monotonic_weight": 0.1,
+    "target_mmd_weight": 5e-05,
+    "base_coeffs": [
+      0.16930643150581395,
+      0.46546965727836725,
+      -1.1996765402179295,
+      0.6419624826043878
+    ]
+  },
+  "splits": [
+    {
+      "split": "source",
+      "samples": 115256,
+      "cells": 61,
+      "batches": "1,2,3,4,5,6,7,8",
+      "rul_min": 0.0,
+      "rul_max": 2688.0,
+      "cycle_min": 1.0,
+      "cycle_max": 2689.0
+    },
+    {
+      "split": "target_adapt",
+      "samples": 16310,
+      "cells": 8,
+      "batches": "9",
+      "rul_min": 0.0,
+      "rul_max": 2307.0,
+      "cycle_min": 1.0,
+      "cycle_max": 2308.0
+    },
+    {
+      "split": "target_test",
+      "samples": 14556,
+      "cells": 8,
+      "batches": "10",
+      "rul_min": 0.0,
+      "rul_max": 2284.0,
+      "cycle_min": 1.0,
+      "cycle_max": 2285.0
+    }
+  ],
+  "metrics": {
+    "target_adapt": {
+      "rmse_cycles": 168.5663757897019,
+      "mae_cycles": 137.46092224121094,
+      "macro_rmse_cycles": 159.11231292559813,
+      "rmse_norm": 0.05618878923314523,
+      "late_le_300_rmse_cycles": 207.11615475983518,
+      "late_le_300_mae_cycles": 193.82493591308594,
+      "late_le_300_n": 2408,
+      "mid_300_1000_rmse_cycles": 173.81966903590055,
+      "mid_300_1000_mae_cycles": 140.58596801757812,
+      "mid_300_1000_n": 5600,
+      "early_gt_1000_rmse_cycles": 151.65985919360799,
+      "early_gt_1000_mae_cycles": 119.00456237792969,
+      "early_gt_1000_n": 8302
+    },
+    "target_test": {
+      "rmse_cycles": 268.1623808441445,
+      "mae_cycles": 228.30979919433594,
+      "macro_rmse_cycles": 254.8120248834625,
+      "rmse_norm": 0.08938746582974003,
+      "late_le_300_rmse_cycles": 293.9760699232167,
+      "late_le_300_mae_cycles": 269.8738708496094,
+      "late_le_300_n": 2408,
+      "mid_300_1000_rmse_cycles": 276.35738862928923,
+      "mid_300_1000_mae_cycles": 234.61038208007812,
+      "mid_300_1000_n": 5600,
+      "early_gt_1000_rmse_cycles": 250.51638856070875,
+      "early_gt_1000_mae_cycles": 207.63641357421875,
+      "early_gt_1000_n": 6548
+    }
+  },
+  "history_tail": [
+    {
+      "epoch": 7,
+      "train_loss": 0.014018829849859079,
+      "train_rul_mse": 0.013173535279929639,
+      "train_soh_aux_mse": 0.01615482522174716,
+      "train_monotonic": 0.00023980937548913063,
+      "train_mmd": 0.27144736560682453,
+      "mmd_weight": 5e-05,
+      "lr": 0.001,
+      "target_adapt_rmse_cycles": 262.6570066169947,
+      "target_adapt_mae_cycles": 215.9102020263672
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.012541789080326755,
+      "train_rul_mse": 0.011729120540743073,
+      "train_soh_aux_mse": 0.015421985151867072,
+      "train_monotonic": 0.000268487872138697,
+      "train_mmd": 0.2944124119977156,
+      "mmd_weight": 5e-05,
+      "lr": 0.001,
+      "target_adapt_rmse_cycles": 183.86906219168574,
+      "target_adapt_mae_cycles": 144.40428161621094
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.01290002535097301,
+      "train_rul_mse": 0.012132460872332254,
+      "train_soh_aux_mse": 0.014473223468909661,
+      "train_monotonic": 0.0002941421456246947,
+      "train_mmd": 0.2897820862631003,
+      "mmd_weight": 5e-05,
+      "lr": 0.001,
+      "target_adapt_rmse_cycles": 171.9140353399774,
+      "target_adapt_mae_cycles": 136.7747039794922
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.011968627851456404,
+      "train_rul_mse": 0.011216906442617377,
+      "train_soh_aux_mse": 0.01420781722602745,
+      "train_monotonic": 0.000258693887735717,
+      "train_mmd": 0.3092231718202432,
+      "mmd_weight": 5e-05,
+      "lr": 0.001,
+      "target_adapt_rmse_cycles": 188.81028631605324,
+      "target_adapt_mae_cycles": 147.3688201904297
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.01157774484405915,
+      "train_rul_mse": 0.010824994696304203,
+      "train_soh_aux_mse": 0.01406871957393984,
+      "train_monotonic": 0.0003548930969069867,
+      "train_mmd": 0.2764981726805369,
+      "mmd_weight": 5e-05,
+      "lr": 0.0002,
+      "target_adapt_rmse_cycles": 182.16001079065074,
+      "target_adapt_mae_cycles": 140.0215606689453
+    }
+  ]
+}

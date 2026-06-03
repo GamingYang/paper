@@ -1,0 +1,21 @@
+{
+  "model": "physical-only-v1",
+  "label": "Pure cubic physical base",
+  "description": "Pure model-based baseline using only the cubic degradation function fitted on source domain.",
+  "protocol": "Scheme A: source fit for physical coefficients only; target-domain development set for reporting; target_test final once",
+  "best_epoch_selected_by_target_dev": 0,
+  "target_dev_metrics": {
+    "pooled_rmse": 0.026976499062769298,
+    "macro_rmse": 0.026855523141171532,
+    "mae": 0.023402774706482887,
+    "mape_percent": 2.414828300476074
+  },
+  "target_test_metrics": {
+    "pooled_rmse": 0.032649383958177326,
+    "macro_rmse": 0.03125047373140824,
+    "mae": 0.023745808750391006,
+    "mape_percent": 2.5142366886138916
+  },
+  "checkpoint_path": null,
+  "run_seconds": 0.0
+}

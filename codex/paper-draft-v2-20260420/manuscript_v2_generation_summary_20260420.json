@@ -1,0 +1,48 @@
+{
+  "status": "success",
+  "output_dir": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v2-20260420",
+  "docx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v2-20260420\\method_experiment_draft_v2_20260420.docx",
+  "xlsx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v2-20260420\\manuscript_v2_metrics_summary_20260420.xlsx",
+  "figures": {
+    "final-retained-v1": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v2-20260420\\figures\\final-retained-v1_batch10_2x4_clean_abs_error_bars_v2.png",
+    "no-physical-base-v1": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v2-20260420\\figures\\no-physical-base-v1_batch10_2x4_clean_abs_error_bars_v2.png",
+    "no-mmd-v1": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v2-20260420\\figures\\no-mmd-v1_batch10_2x4_clean_abs_error_bars_v2.png",
+    "no-attention-v1": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v2-20260420\\figures\\no-attention-v1_batch10_2x4_clean_abs_error_bars_v2.png"
+  },
+  "bar_figure": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v2-20260420\\figures\\per_battery_rmse_comparison_bar_v2.png",
+  "overall_metrics": [
+    {
+      "model": "final-retained-v1",
+      "label": "Final retained model",
+      "pooled_rmse": 0.009499246001179452,
+      "macro_rmse": 0.008300783386106398,
+      "mae": 0.005704157908200628,
+      "mape_percent": 0.6103620610644136
+    },
+    {
+      "model": "no-physical-base-v1",
+      "label": "w/o physical base",
+      "pooled_rmse": 0.0207164193190419,
+      "macro_rmse": 0.019506288561616097,
+      "mae": 0.013759463697909391,
+      "mape_percent": 1.4798560113158585
+    },
+    {
+      "model": "no-mmd-v1",
+      "label": "w/o MMD",
+      "pooled_rmse": 0.009677417618189132,
+      "macro_rmse": 0.00872129621225572,
+      "mae": 0.005783881978793406,
+      "mape_percent": 0.6238259883825777
+    },
+    {
+      "model": "no-attention-v1",
+      "label": "w/o Attention",
+      "pooled_rmse": 0.011676698566973785,
+      "macro_rmse": 0.010534793811503108,
+      "mae": 0.00814546968180847,
+      "mape_percent": 0.8618415272887118
+    }
+  ],
+  "note": "Metrics use raw predictions. 2x4 prediction lines and empirical bands are display-smoothed only."
+}

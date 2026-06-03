@@ -1,0 +1,18 @@
+{
+  "stage": "completed",
+  "status": "done",
+  "elapsed_seconds": 1.115,
+  "time_limit_seconds": 18000,
+  "outputs": {
+    "suite_dir": "C:\\Users\\ROG\\Desktop\\paper\\codex\\kernel-baseline-suite-v2",
+    "report_docx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\kernel-baseline-suite-v2\\kernel_baseline_suite_v2_report.docx",
+    "run_log_docx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\kernel-baseline-suite-v2\\kernel_baseline_suite_v2_run_log.docx",
+    "summary_xlsx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\kernel-baseline-suite-v2\\kernel_baseline_suite_v2_summary.xlsx",
+    "run_json": "C:\\Users\\ROG\\Desktop\\paper\\codex\\kernel-baseline-suite-v2\\kernel_baseline_suite_v2_summary.json"
+  },
+  "models_completed": [
+    "pca-linearsvr-v1",
+    "pca-rbf-svr-v1",
+    "pca-gpr-v1"
+  ]
+}

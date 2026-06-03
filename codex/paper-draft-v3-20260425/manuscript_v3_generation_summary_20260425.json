@@ -1,0 +1,92 @@
+{
+  "outputs": {
+    "docx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v3-20260425\\method_experiment_draft_v3.docx",
+    "xlsx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v3-20260425\\manuscript_v3_metrics_summary.xlsx",
+    "figures_dir": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v3-20260425\\figures"
+  },
+  "source_files": {
+    "old_internal_summary": "C:\\Users\\ROG\\Desktop\\paper\\codex\\model_runs_summary.xlsx",
+    "final_results": "C:\\Users\\ROG\\Desktop\\paper\\codex\\final-retained-v1\\final-retained-v1_results.xlsx",
+    "external_v1": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\external_baseline_suite_v1_summary.xlsx",
+    "kernel_v2": "C:\\Users\\ROG\\Desktop\\paper\\codex\\kernel-baseline-suite-v2\\kernel_baseline_suite_v2_summary.xlsx"
+  },
+  "validation": {
+    "internal_macro_rmse_complete": true,
+    "reference_checks": {
+      "final_target_test_rmse": true,
+      "final_macro_rmse": true,
+      "no_physical_macro_rmse": true,
+      "no_mmd_macro_rmse": true,
+      "no_attention_macro_rmse": true,
+      "cnn_lstm_rmse": true,
+      "pca_gpr_rmse": true
+    },
+    "ranking_preview": [
+      {
+        "model": "final-retained-v1",
+        "target_test_pooled_rmse": 0.009499246123112539
+      },
+      {
+        "model": "no-mmd-v1",
+        "target_test_pooled_rmse": 0.00967741744451629
+      },
+      {
+        "model": "no-attention-v1",
+        "target_test_pooled_rmse": 0.011676698601473611
+      },
+      {
+        "model": "cnn-lstm-baseline-v1",
+        "target_test_pooled_rmse": 0.01607493964875401
+      },
+      {
+        "model": "no-physical-base-v1",
+        "target_test_pooled_rmse": 0.020716419371266184
+      },
+      {
+        "model": "pca-gpr-v1",
+        "target_test_pooled_rmse": 0.02310774246719691
+      },
+      {
+        "model": "pca-rbf-svr-v1",
+        "target_test_pooled_rmse": 0.02382312402827391
+      },
+      {
+        "model": "physical-only-v1",
+        "target_test_pooled_rmse": 0.03264938395817733
+      },
+      {
+        "model": "lstm-baseline-v1",
+        "target_test_pooled_rmse": 0.03274155885317735
+      },
+      {
+        "model": "gru-baseline-v1",
+        "target_test_pooled_rmse": 0.03310894582149811
+      },
+      {
+        "model": "pca-linearsvr-v1",
+        "target_test_pooled_rmse": 0.03699293128008133
+      }
+    ]
+  },
+  "copied_figures": [
+    "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v3-20260425\\figures\\final-retained-v1_batch10_2x4_clean_abs_error_bars_v2.png",
+    "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v3-20260425\\figures\\per_battery_rmse_comparison_bar_v2.png",
+    "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v3-20260425\\figures\\no-physical-base-v1_batch10_2x4_clean_abs_error_bars_v2.png",
+    "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v3-20260425\\figures\\no-mmd-v1_batch10_2x4_clean_abs_error_bars_v2.png",
+    "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-draft-v3-20260425\\figures\\no-attention-v1_batch10_2x4_clean_abs_error_bars_v2.png"
+  ],
+  "top3_by_blind_test_rmse": [
+    {
+      "label": "Final retained model",
+      "target_test_pooled_rmse": 0.009499246123112539
+    },
+    {
+      "label": "w/o MMD",
+      "target_test_pooled_rmse": 0.00967741744451629
+    },
+    {
+      "label": "w/o Attention",
+      "target_test_pooled_rmse": 0.011676698601473611
+    }
+  ]
+}

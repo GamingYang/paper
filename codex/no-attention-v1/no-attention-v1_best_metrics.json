@@ -1,0 +1,87 @@
+{
+  "config": {
+    "model": "no-attention-v1",
+    "description": "移除 Attention，使用 LSTM 最后时刻隐藏状态作为时序表征，保留物理基座与 MMD。",
+    "python_executable": "D:\\Anaconda\\envs\\battery_project\\python.exe",
+    "device": "cuda",
+    "data_dir": "C:\\Users\\ROG\\Desktop\\paper\\PYthon训练代码\\processed_clean",
+    "seed": 42,
+    "best_epoch_selected_by_target_adapt": 74,
+    "best_target_adapt_rmse": 0.009447252775600127,
+    "final_target_test_rmse": 0.011676698601473611,
+    "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\no-attention-v1\\no-attention-v1_best_by_target_adapt.pt"
+  },
+  "metrics": [
+    {
+      "split": "target_adapt",
+      "pooled_rmse": 0.009447252775600127,
+      "macro_rmse": 0.00940009510959697,
+      "mae": 0.006953824777156115,
+      "mape_percent": 0.7332963347434998,
+      "role": "model_selection"
+    },
+    {
+      "split": "target_test",
+      "pooled_rmse": 0.011676698601473611,
+      "macro_rmse": 0.010534793547796156,
+      "mae": 0.008145470172166824,
+      "mape_percent": 0.8618414402008057,
+      "role": "final_blind_test_once"
+    }
+  ],
+  "compact_summary": {
+    "model": "no-attention-v1",
+    "best_target_adapt_rmse": 0.009447252775600127,
+    "final_target_test_rmse": 0.011676698601473611
+  },
+  "target_test_cells": [
+    {
+      "battery_index": 69,
+      "rmse": 0.010475548697349683,
+      "mae": 0.006737335119396448,
+      "n_points": 1702
+    },
+    {
+      "battery_index": 70,
+      "rmse": 0.006432154540386099,
+      "mae": 0.003907795529812574,
+      "n_points": 1697
+    },
+    {
+      "battery_index": 71,
+      "rmse": 0.009928413427553113,
+      "mae": 0.007428909186273813,
+      "n_points": 1848
+    },
+    {
+      "battery_index": 72,
+      "rmse": 0.006539967768583712,
+      "mae": 0.0046487594954669476,
+      "n_points": 1811
+    },
+    {
+      "battery_index": 73,
+      "rmse": 0.007120870720034929,
+      "mae": 0.005065918900072575,
+      "n_points": 2030
+    },
+    {
+      "battery_index": 74,
+      "rmse": 0.02013028722926903,
+      "mae": 0.018354136496782303,
+      "n_points": 2285
+    },
+    {
+      "battery_index": 75,
+      "rmse": 0.010790204499363732,
+      "mae": 0.007866224274039268,
+      "n_points": 1783
+    },
+    {
+      "battery_index": 76,
+      "rmse": 0.012860901499828945,
+      "mae": 0.008622112683951855,
+      "n_points": 1400
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "done",
+  "status": "success",
+  "elapsed_seconds": 30.11494207382202,
+  "time_limit_seconds": 1800,
+  "outputs": {
+    "out_dir": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420",
+    "figure_dir": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\figures",
+    "report_docx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\teal_ci_visualization_report_20260420.docx",
+    "summary_xlsx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\teal_ci_visualization_summary_20260420.xlsx",
+    "run_json": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\teal_ci_visualization_run_summary_20260420.json"
+  },
+  "run_json": "C:\\Users\\ROG\\Desktop\\paper\\codex\\visualization-update-20260420\\teal_ci_visualization_run_summary_20260420.json"
+}

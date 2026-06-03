@@ -1,0 +1,18 @@
+{
+  "group": "new_kernel",
+  "model": "pca-gpr-v1",
+  "label": "PCA-GPR baseline",
+  "family": "kernel_statistical",
+  "source_subset_size": 1800,
+  "pca_components": 12,
+  "best_params_json": "{\"kernel_name\": \"Matern-1.5\"}",
+  "target_dev_rmse": 0.02372533822583677,
+  "target_dev_macro_rmse": 0.022830625742287815,
+  "target_dev_mae": 0.014155447193060148,
+  "target_test_rmse": 0.02310774246719691,
+  "target_test_macro_rmse": 0.02149477594021697,
+  "target_test_mae": 0.014783511191184031,
+  "target_test_mape_percent": 1.601625643719035,
+  "fit_seconds_best_candidate": 31.28255796432495,
+  "warnings_count_best_candidate": 0
+}

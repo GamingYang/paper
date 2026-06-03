@@ -1,0 +1,15 @@
+{
+  "stage": "done",
+  "status": "success",
+  "elapsed_seconds": 15.68088674545288,
+  "time_limit_seconds": 7200,
+  "outputs": {
+    "out_dir": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-update-20260420",
+    "figure_dir": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-update-20260420\\figures",
+    "per_battery_xlsx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-update-20260420\\per_battery_ablation_comparison_20260420.xlsx",
+    "predictions_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-update-20260420\\target_test_predictions_all_models_20260420.csv",
+    "manuscript_docx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-update-20260420\\method_experiment_draft_20260420.docx",
+    "run_summary_json": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-update-20260420\\paper_update_run_summary_20260420.json"
+  },
+  "run_summary_json": "C:\\Users\\ROG\\Desktop\\paper\\codex\\paper-update-20260420\\paper_update_run_summary_20260420.json"
+}

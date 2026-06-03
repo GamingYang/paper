@@ -1,0 +1,18 @@
+{
+  "group": "new_kernel",
+  "model": "pca-linearsvr-v1",
+  "label": "PCA-LinearSVR baseline",
+  "family": "kernel_statistical",
+  "source_subset_size": 20000,
+  "pca_components": 24,
+  "best_params_json": "{\"C\": 0.1, \"epsilon\": 0.001}",
+  "target_dev_rmse": 0.029125121832767657,
+  "target_dev_macro_rmse": 0.028872428751464622,
+  "target_dev_mae": 0.020795940301679028,
+  "target_test_rmse": 0.03699293128008133,
+  "target_test_macro_rmse": 0.03543885059848256,
+  "target_test_mae": 0.025585195430116635,
+  "target_test_mape_percent": 2.6913413929470615,
+  "fit_seconds_best_candidate": 29.261715412139893,
+  "warnings_count_best_candidate": 1
+}

@@ -1,0 +1,18 @@
+{
+  "group": "new_kernel",
+  "model": "pca-rbf-svr-v1",
+  "label": "PCA-RBF-SVR baseline",
+  "family": "kernel_statistical",
+  "source_subset_size": 7000,
+  "pca_components": 24,
+  "best_params_json": "{\"C\": 5.0, \"epsilon\": 0.001, \"gamma\": \"scale\"}",
+  "target_dev_rmse": 0.022063244843719538,
+  "target_dev_macro_rmse": 0.02065428037068564,
+  "target_dev_mae": 0.013264212322599568,
+  "target_test_rmse": 0.023823124028273912,
+  "target_test_macro_rmse": 0.02115723976451247,
+  "target_test_mae": 0.014489834719583705,
+  "target_test_mape_percent": 1.566959044451647,
+  "fit_seconds_best_candidate": 34.44339394569397,
+  "warnings_count_best_candidate": 0
+}

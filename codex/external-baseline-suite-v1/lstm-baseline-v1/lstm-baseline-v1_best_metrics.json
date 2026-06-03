@@ -1,0 +1,21 @@
+{
+  "model": "lstm-baseline-v1",
+  "label": "LSTM baseline",
+  "description": "Pure data-driven recurrent baseline using sequence fragment plus normalized cycle position.",
+  "protocol": "Scheme A: source supervised training; target-domain development set for checkpoint selection; target_test final once",
+  "best_epoch_selected_by_target_dev": 15,
+  "target_dev_metrics": {
+    "pooled_rmse": 0.02752239017682538,
+    "macro_rmse": 0.027417953428922136,
+    "mae": 0.0232224278151989,
+    "mape_percent": 2.4157638549804688
+  },
+  "target_test_metrics": {
+    "pooled_rmse": 0.03274155885317735,
+    "macro_rmse": 0.03143807423876739,
+    "mae": 0.02352220192551613,
+    "mape_percent": 2.4993200302124023
+  },
+  "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\lstm-baseline-v1\\lstm-baseline-v1_best_by_target_dev.pt",
+  "run_seconds": 170.97507572174072
+}

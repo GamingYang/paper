@@ -1,0 +1,21 @@
+{
+  "model": "cnn-lstm-baseline-v1",
+  "label": "CNN-LSTM baseline",
+  "description": "Common CNN-LSTM baseline without explicit physical base, attention, or domain alignment.",
+  "protocol": "Scheme A: source supervised training; target-domain development set for checkpoint selection; target_test final once",
+  "best_epoch_selected_by_target_dev": 22,
+  "target_dev_metrics": {
+    "pooled_rmse": 0.00855505249105402,
+    "macro_rmse": 0.008415678132805115,
+    "mae": 0.005896043498069048,
+    "mape_percent": 0.628292441368103
+  },
+  "target_test_metrics": {
+    "pooled_rmse": 0.016074939648754012,
+    "macro_rmse": 0.014387066740468576,
+    "mae": 0.009299389086663723,
+    "mape_percent": 1.0039921998977661
+  },
+  "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\cnn-lstm-baseline-v1\\cnn-lstm-baseline-v1_best_by_target_dev.pt",
+  "run_seconds": 244.062025308609
+}

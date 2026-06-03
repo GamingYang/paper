@@ -1,0 +1,67 @@
+{
+  "protocol": "processed_clean_fixed_split",
+  "label_mode": "nominal",
+  "time_limit_seconds": 18000,
+  "elapsed_seconds": 0.854,
+  "new_kernel_results": [
+    {
+      "group": "new_kernel",
+      "model": "pca-gpr-v1",
+      "label": "PCA-GPR baseline",
+      "family": "kernel_statistical",
+      "source_subset_size": 1800,
+      "pca_components": 12,
+      "best_params_json": "{\"kernel_name\": \"Matern-1.5\"}",
+      "target_dev_rmse": 0.02372533822583677,
+      "target_dev_macro_rmse": 0.022830625742287815,
+      "target_dev_mae": 0.014155447193060148,
+      "target_test_rmse": 0.02310774246719691,
+      "target_test_macro_rmse": 0.02149477594021697,
+      "target_test_mae": 0.014783511191184031,
+      "target_test_mape_percent": 1.601625643719035,
+      "fit_seconds_best_candidate": 31.28255796432495,
+      "warnings_count_best_candidate": 0
+    },
+    {
+      "group": "new_kernel",
+      "model": "pca-rbf-svr-v1",
+      "label": "PCA-RBF-SVR baseline",
+      "family": "kernel_statistical",
+      "source_subset_size": 7000,
+      "pca_components": 24,
+      "best_params_json": "{\"C\": 5.0, \"epsilon\": 0.001, \"gamma\": \"scale\"}",
+      "target_dev_rmse": 0.022063244843719538,
+      "target_dev_macro_rmse": 0.02065428037068564,
+      "target_dev_mae": 0.013264212322599568,
+      "target_test_rmse": 0.023823124028273912,
+      "target_test_macro_rmse": 0.02115723976451247,
+      "target_test_mae": 0.014489834719583705,
+      "target_test_mape_percent": 1.566959044451647,
+      "fit_seconds_best_candidate": 34.44339394569397,
+      "warnings_count_best_candidate": 0
+    },
+    {
+      "group": "new_kernel",
+      "model": "pca-linearsvr-v1",
+      "label": "PCA-LinearSVR baseline",
+      "family": "kernel_statistical",
+      "source_subset_size": 20000,
+      "pca_components": 24,
+      "best_params_json": "{\"C\": 0.1, \"epsilon\": 0.001}",
+      "target_dev_rmse": 0.029125121832767657,
+      "target_dev_macro_rmse": 0.028872428751464622,
+      "target_dev_mae": 0.020795940301679028,
+      "target_test_rmse": 0.03699293128008133,
+      "target_test_macro_rmse": 0.03543885059848256,
+      "target_test_mae": 0.025585195430116635,
+      "target_test_mape_percent": 2.6913413929470615,
+      "fit_seconds_best_candidate": 29.261715412139893,
+      "warnings_count_best_candidate": 1
+    }
+  ],
+  "outputs": {
+    "report_docx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\kernel-baseline-suite-v2\\kernel_baseline_suite_v2_report.docx",
+    "run_log_docx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\kernel-baseline-suite-v2\\kernel_baseline_suite_v2_run_log.docx",
+    "summary_xlsx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\kernel-baseline-suite-v2\\kernel_baseline_suite_v2_summary.xlsx"
+  }
+}

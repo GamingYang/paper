@@ -1,0 +1,21 @@
+{
+  "model": "gru-baseline-v1",
+  "label": "GRU baseline",
+  "description": "Pure data-driven GRU baseline using sequence fragment plus normalized cycle position.",
+  "protocol": "Scheme A: source supervised training; target-domain development set for checkpoint selection; target_test final once",
+  "best_epoch_selected_by_target_dev": 14,
+  "target_dev_metrics": {
+    "pooled_rmse": 0.027316293598165328,
+    "macro_rmse": 0.027255075023736485,
+    "mae": 0.022685304284095764,
+    "mape_percent": 2.37015438079834
+  },
+  "target_test_metrics": {
+    "pooled_rmse": 0.03310894582149811,
+    "macro_rmse": 0.0319282561440226,
+    "mae": 0.023576674982905388,
+    "mape_percent": 2.510279655456543
+  },
+  "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\external-baseline-suite-v1\\gru-baseline-v1\\gru-baseline-v1_best_by_target_dev.pt",
+  "run_seconds": 161.43687558174133
+}

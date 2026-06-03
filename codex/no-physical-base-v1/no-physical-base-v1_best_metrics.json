@@ -1,0 +1,87 @@
+{
+  "config": {
+    "model": "no-physical-base-v1",
+    "description": "移除三次物理退化基座，保留残差时序网络、Attention 与 MMD。",
+    "python_executable": "D:\\Anaconda\\envs\\battery_project\\python.exe",
+    "device": "cuda",
+    "data_dir": "C:\\Users\\ROG\\Desktop\\paper\\PYthon训练代码\\processed_clean",
+    "seed": 42,
+    "best_epoch_selected_by_target_adapt": 138,
+    "best_target_adapt_rmse": 0.015617972988033678,
+    "final_target_test_rmse": 0.020716419371266184,
+    "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\no-physical-base-v1\\no-physical-base-v1_best_by_target_adapt.pt"
+  },
+  "metrics": [
+    {
+      "split": "target_adapt",
+      "pooled_rmse": 0.015617972988033678,
+      "macro_rmse": 0.015456773179101567,
+      "mae": 0.011960478499531746,
+      "mape_percent": 1.2649197578430176,
+      "role": "model_selection"
+    },
+    {
+      "split": "target_test",
+      "pooled_rmse": 0.020716419371266184,
+      "macro_rmse": 0.019506288473427214,
+      "mae": 0.013759463094174862,
+      "mape_percent": 1.4798561334609985,
+      "role": "final_blind_test_once"
+    }
+  ],
+  "compact_summary": {
+    "model": "no-physical-base-v1",
+    "best_target_adapt_rmse": 0.015617972988033678,
+    "final_target_test_rmse": 0.020716419371266184
+  },
+  "target_test_cells": [
+    {
+      "battery_index": 69,
+      "rmse": 0.02256474916691031,
+      "mae": 0.01507908571511507,
+      "n_points": 1702
+    },
+    {
+      "battery_index": 70,
+      "rmse": 0.013196909767011815,
+      "mae": 0.01074023824185133,
+      "n_points": 1697
+    },
+    {
+      "battery_index": 71,
+      "rmse": 0.016871391281397842,
+      "mae": 0.010928594507277012,
+      "n_points": 1848
+    },
+    {
+      "battery_index": 72,
+      "rmse": 0.02505625583062707,
+      "mae": 0.021234041079878807,
+      "n_points": 1811
+    },
+    {
+      "battery_index": 73,
+      "rmse": 0.007749816388841171,
+      "mae": 0.005305817350745201,
+      "n_points": 2030
+    },
+    {
+      "battery_index": 74,
+      "rmse": 0.022191760607349332,
+      "mae": 0.01849275827407837,
+      "n_points": 2285
+    },
+    {
+      "battery_index": 75,
+      "rmse": 0.011021605121370927,
+      "mae": 0.0071054683066904545,
+      "n_points": 1783
+    },
+    {
+      "battery_index": 76,
+      "rmse": 0.03739781962390925,
+      "mae": 0.02288946881890297,
+      "n_points": 1400
+    }
+  ]
+}
