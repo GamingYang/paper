@@ -1,0 +1,4 @@
+﻿feature_family,protocol,model,horizon,selection_set,selection_method,batch10_used,n_features,n_source_cells,n_target_adapt_cells,batch9_eol_rmse,batch9_eol_mae,batch9_rul_rmse,batch9_rul_mae
+fused_all,source_plus_target_adapt_loocv,extra_trees,1000,Batch9_target_adapt_validation_only,Batch9_leave_one_cell_out,False,108,61,8,75.25751040615742,61.956714015151704,75.25751040615742,61.956714015151704
+soh_capacity,source_plus_target_adapt_loocv,extra_trees,800,Batch9_target_adapt_validation_only,Batch9_leave_one_cell_out,False,59,61,8,86.76387445844065,70.24277462121177,86.76387445844065,70.24277462121177
+x_curve,source_plus_target_adapt_loocv,extra_trees,1000,Batch9_target_adapt_validation_only,Batch9_leave_one_cell_out,False,49,61,8,87.46145274208831,84.33916472321053,87.46145274208831,84.33916472321053

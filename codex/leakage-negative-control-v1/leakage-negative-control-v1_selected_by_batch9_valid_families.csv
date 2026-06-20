@@ -1,0 +1,4 @@
+family,model,horizon,validity,n_features,batch9_rmse,batch9_mae,batch10_rmse_report_only,batch10_mae_report_only,selection_rule
+strict_fused_all,extra_trees,1000,valid_protocol_feature_family,108,75.25751040615742,61.956714015151704,56.18598222894645,49.41712121212109,Batch9 LOOCV only; Batch10 report-only
+soh_capacity_only,extra_trees,800,valid_protocol_feature_family,59,86.76387445844065,70.24277462121177,138.56148436127614,88.30816287878784,Batch9 LOOCV only; Batch10 report-only
+x_curve_only,extra_trees,1000,valid_protocol_feature_family,49,87.46145274208831,84.33916472321053,199.74163589297427,167.78630107897138,Batch9 LOOCV only; Batch10 report-only

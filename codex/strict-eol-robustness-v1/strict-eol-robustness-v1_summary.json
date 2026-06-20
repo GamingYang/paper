@@ -1,0 +1,378 @@
+{
+  "run_name": "strict-eol-robustness-v1",
+  "generated_at": "2026-06-04T12:53:36",
+  "input_files": {
+    "predictions_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\strict-eol-protocol-v1\\strict-eol-protocol-v1_selected_test_predictions.csv",
+    "candidate_validation_summary_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\strict-eol-protocol-v1\\strict-eol-protocol-v1_candidate_validation_summary.csv"
+  },
+  "protocol_guard": {
+    "source_batches": "1-8",
+    "target_adapt_batch": 9,
+    "blind_test_batch": 10,
+    "selection_source": "Batch 9 validation only",
+    "batch10_use": "final blind-test reporting only",
+    "no_training_or_reselection": true
+  },
+  "selected_candidate_from_batch9": {
+    "protocol": "source_plus_target_adapt_loocv",
+    "model": "extra_trees",
+    "horizon": 1000,
+    "selection_set": "target_adapt",
+    "selection_method": "batch9_leave_one_cell_out",
+    "selection_eol_rmse": 75.25751040615742,
+    "selection_eol_mae": 61.9567140151517,
+    "n_source_cells": 61,
+    "n_target_adapt_cells": 8
+  },
+  "candidate_validation_top8_by_batch9": [
+    {
+      "protocol": "source_plus_target_adapt_loocv",
+      "model": "extra_trees",
+      "horizon": 1000,
+      "selection_set": "target_adapt",
+      "selection_method": "batch9_leave_one_cell_out",
+      "selection_eol_rmse": 75.25751040615742,
+      "selection_eol_mae": 61.9567140151517,
+      "n_source_cells": 61,
+      "n_target_adapt_cells": 8
+    },
+    {
+      "protocol": "source_plus_target_adapt_loocv",
+      "model": "svr_rbf",
+      "horizon": 800,
+      "selection_set": "target_adapt",
+      "selection_method": "batch9_leave_one_cell_out",
+      "selection_eol_rmse": 79.56998196505133,
+      "selection_eol_mae": 53.067961777029325,
+      "n_source_cells": 61,
+      "n_target_adapt_cells": 8
+    },
+    {
+      "protocol": "source_plus_target_adapt_loocv",
+      "model": "random_forest",
+      "horizon": 1000,
+      "selection_set": "target_adapt",
+      "selection_method": "batch9_leave_one_cell_out",
+      "selection_eol_rmse": 81.75043597320729,
+      "selection_eol_mae": 61.08735321969675,
+      "n_source_cells": 61,
+      "n_target_adapt_cells": 8
+    },
+    {
+      "protocol": "source_only",
+      "model": "extra_trees",
+      "horizon": 1000,
+      "selection_set": "target_adapt",
+      "selection_method": "direct_batch9_eval",
+      "selection_eol_rmse": 82.5858116709491,
+      "selection_eol_mae": 68.68304924242426,
+      "n_source_cells": 61,
+      "n_target_adapt_cells": 8
+    },
+    {
+      "protocol": "source_plus_target_adapt_loocv",
+      "model": "random_forest",
+      "horizon": 500,
+      "selection_set": "target_adapt",
+      "selection_method": "batch9_leave_one_cell_out",
+      "selection_eol_rmse": 83.20463777431243,
+      "selection_eol_mae": 72.2598022637082,
+      "n_source_cells": 61,
+      "n_target_adapt_cells": 8
+    },
+    {
+      "protocol": "source_plus_target_adapt_loocv",
+      "model": "elastic_net",
+      "horizon": 1000,
+      "selection_set": "target_adapt",
+      "selection_method": "batch9_leave_one_cell_out",
+      "selection_eol_rmse": 89.32151458554605,
+      "selection_eol_mae": 71.8255794738383,
+      "n_source_cells": 61,
+      "n_target_adapt_cells": 8
+    },
+    {
+      "protocol": "source_plus_target_adapt_loocv",
+      "model": "extra_trees",
+      "horizon": 800,
+      "selection_set": "target_adapt",
+      "selection_method": "batch9_leave_one_cell_out",
+      "selection_eol_rmse": 91.0848057935269,
+      "selection_eol_mae": 78.13642045454515,
+      "n_source_cells": 61,
+      "n_target_adapt_cells": 8
+    },
+    {
+      "protocol": "source_plus_target_adapt_loocv",
+      "model": "gbr",
+      "horizon": 500,
+      "selection_set": "target_adapt",
+      "selection_method": "batch9_leave_one_cell_out",
+      "selection_eol_rmse": 92.81575794542444,
+      "selection_eol_mae": 84.20203955573055,
+      "n_source_cells": 61,
+      "n_target_adapt_cells": 8
+    }
+  ],
+  "blind_test_metrics": {
+    "n_cells": 8,
+    "rmse_cycles": 56.18598222894645,
+    "mae_cycles": 49.41712121212109,
+    "median_absolute_error_cycles": 47.35946969696954,
+    "max_absolute_error_cycles": 93.21401515151479,
+    "bias_mean_error_cycles": 38.23208333333329,
+    "pearson_true_pred": 0.9896166798559066,
+    "spearman_true_pred": 0.9761904761904763
+  },
+  "bootstrap": {
+    "seed": 20260604,
+    "n_resamples": 20000,
+    "unit": "Batch 10 cell",
+    "ci_method": "percentile",
+    "metrics": {
+      "rmse_cycles": {
+        "p2_5": 36.8354307962391,
+        "median": 55.6810106299277,
+        "p97_5": 72.61444641203025
+      },
+      "mae_cycles": {
+        "p2_5": 31.346816524621083,
+        "median": 49.330748106060454,
+        "p97_5": 68.10248106060584
+      }
+    }
+  },
+  "per_cell": {
+    "n_cells": 8,
+    "max_abs_error_cell_id": "10-4",
+    "max_abs_error_cycles": 93.21401515151479,
+    "rows": [
+      {
+        "cell_id": "10-1",
+        "battery_index": 69,
+        "batch_id": 10,
+        "selection_scope": "global_best_by_batch9",
+        "protocol": "source_plus_target_adapt_loocv",
+        "model": "extra_trees",
+        "observed_horizon_cycles": 1000,
+        "true_eol_cycle": 1702.0,
+        "pred_eol_cycle": 1785.011363636363,
+        "eol_error_cycles": 83.01136363636306,
+        "abs_eol_error_cycles": 83.01136363636306,
+        "true_rul_at_horizon_cycles": 702.0,
+        "pred_rul_at_horizon_cycles": 785.0113636363631,
+        "rul_error_at_horizon_cycles": 83.01136363636306,
+        "abs_rul_error_at_horizon_cycles": 83.01136363636306
+      },
+      {
+        "cell_id": "10-2",
+        "battery_index": 70,
+        "batch_id": 10,
+        "selection_scope": "global_best_by_batch9",
+        "protocol": "source_plus_target_adapt_loocv",
+        "model": "extra_trees",
+        "observed_horizon_cycles": 1000,
+        "true_eol_cycle": 1697.0,
+        "pred_eol_cycle": 1726.9590909090912,
+        "eol_error_cycles": 29.959090909091174,
+        "abs_eol_error_cycles": 29.959090909091174,
+        "true_rul_at_horizon_cycles": 697.0,
+        "pred_rul_at_horizon_cycles": 726.9590909090912,
+        "rul_error_at_horizon_cycles": 29.959090909091174,
+        "abs_rul_error_at_horizon_cycles": 29.959090909091174
+      },
+      {
+        "cell_id": "10-3",
+        "battery_index": 71,
+        "batch_id": 10,
+        "selection_scope": "global_best_by_batch9",
+        "protocol": "source_plus_target_adapt_loocv",
+        "model": "extra_trees",
+        "observed_horizon_cycles": 1000,
+        "true_eol_cycle": 1848.0,
+        "pred_eol_cycle": 1897.978787878788,
+        "eol_error_cycles": 49.9787878787879,
+        "abs_eol_error_cycles": 49.9787878787879,
+        "true_rul_at_horizon_cycles": 848.0,
+        "pred_rul_at_horizon_cycles": 897.9787878787879,
+        "rul_error_at_horizon_cycles": 49.9787878787879,
+        "abs_rul_error_at_horizon_cycles": 49.9787878787879
+      },
+      {
+        "cell_id": "10-4",
+        "battery_index": 72,
+        "batch_id": 10,
+        "selection_scope": "global_best_by_batch9",
+        "protocol": "source_plus_target_adapt_loocv",
+        "model": "extra_trees",
+        "observed_horizon_cycles": 1000,
+        "true_eol_cycle": 1811.0,
+        "pred_eol_cycle": 1904.2140151515148,
+        "eol_error_cycles": 93.21401515151479,
+        "abs_eol_error_cycles": 93.21401515151479,
+        "true_rul_at_horizon_cycles": 811.0,
+        "pred_rul_at_horizon_cycles": 904.2140151515148,
+        "rul_error_at_horizon_cycles": 93.21401515151479,
+        "abs_rul_error_at_horizon_cycles": 93.21401515151479
+      },
+      {
+        "cell_id": "10-5",
+        "battery_index": 73,
+        "batch_id": 10,
+        "selection_scope": "global_best_by_batch9",
+        "protocol": "source_plus_target_adapt_loocv",
+        "model": "extra_trees",
+        "observed_horizon_cycles": 1000,
+        "true_eol_cycle": 2030.0,
+        "pred_eol_cycle": 2086.819621212121,
+        "eol_error_cycles": 56.81962121212109,
+        "abs_eol_error_cycles": 56.81962121212109,
+        "true_rul_at_horizon_cycles": 1030.0,
+        "pred_rul_at_horizon_cycles": 1086.819621212121,
+        "rul_error_at_horizon_cycles": 56.81962121212109,
+        "abs_rul_error_at_horizon_cycles": 56.81962121212109
+      },
+      {
+        "cell_id": "10-6",
+        "battery_index": 74,
+        "batch_id": 10,
+        "selection_scope": "global_best_by_batch9",
+        "protocol": "source_plus_target_adapt_loocv",
+        "model": "extra_trees",
+        "observed_horizon_cycles": 1000,
+        "true_eol_cycle": 2285.0,
+        "pred_eol_cycle": 2316.8874242424245,
+        "eol_error_cycles": 31.88742424242446,
+        "abs_eol_error_cycles": 31.88742424242446,
+        "true_rul_at_horizon_cycles": 1285.0,
+        "pred_rul_at_horizon_cycles": 1316.8874242424245,
+        "rul_error_at_horizon_cycles": 31.88742424242446,
+        "abs_rul_error_at_horizon_cycles": 31.88742424242446
+      },
+      {
+        "cell_id": "10-7",
+        "battery_index": 75,
+        "batch_id": 10,
+        "selection_scope": "global_best_by_batch9",
+        "protocol": "source_plus_target_adapt_loocv",
+        "model": "extra_trees",
+        "observed_horizon_cycles": 1000,
+        "true_eol_cycle": 1783.0,
+        "pred_eol_cycle": 1788.726515151515,
+        "eol_error_cycles": 5.726515151515059,
+        "abs_eol_error_cycles": 5.726515151515059,
+        "true_rul_at_horizon_cycles": 783.0,
+        "pred_rul_at_horizon_cycles": 788.7265151515151,
+        "rul_error_at_horizon_cycles": 5.726515151515059,
+        "abs_rul_error_at_horizon_cycles": 5.726515151515059
+      },
+      {
+        "cell_id": "10-8",
+        "battery_index": 76,
+        "batch_id": 10,
+        "selection_scope": "global_best_by_batch9",
+        "protocol": "source_plus_target_adapt_loocv",
+        "model": "extra_trees",
+        "observed_horizon_cycles": 1000,
+        "true_eol_cycle": 1400.0,
+        "pred_eol_cycle": 1355.2598484848488,
+        "eol_error_cycles": -44.74015151515118,
+        "abs_eol_error_cycles": 44.74015151515118,
+        "true_rul_at_horizon_cycles": 400.0,
+        "pred_rul_at_horizon_cycles": 355.2598484848488,
+        "rul_error_at_horizon_cycles": -44.74015151515118,
+        "abs_rul_error_at_horizon_cycles": 44.74015151515118
+      }
+    ]
+  },
+  "leave_one_cell_out": {
+    "rmse_min_cycles": 48.647513769366704,
+    "rmse_max_cycles": 60.02633209858981,
+    "mae_min_cycles": 43.160422077921986,
+    "mae_max_cycles": 55.658636363636234,
+    "rows": [
+      {
+        "left_out_cell_id": "10-1",
+        "left_out_abs_error_cycles": 83.01136363636306,
+        "n_cells_used": 7,
+        "rmse_cycles": 51.21945821585971,
+        "mae_cycles": 44.617943722943664,
+        "delta_rmse_vs_full_cycles": -4.96652401308674,
+        "delta_mae_vs_full_cycles": -4.799177489177424
+      },
+      {
+        "left_out_cell_id": "10-2",
+        "left_out_abs_error_cycles": 29.959090909091174,
+        "n_cells_used": 7,
+        "rmse_cycles": 58.988339845566934,
+        "mae_cycles": 52.19683982683965,
+        "delta_rmse_vs_full_cycles": 2.8023576166204833,
+        "delta_mae_vs_full_cycles": 2.7797186147185613
+      },
+      {
+        "left_out_cell_id": "10-3",
+        "left_out_abs_error_cycles": 49.9787878787879,
+        "n_cells_used": 7,
+        "rmse_cycles": 57.01758820677179,
+        "mae_cycles": 49.33688311688297,
+        "delta_rmse_vs_full_cycles": 0.8316059778253404,
+        "delta_mae_vs_full_cycles": -0.08023809523811565
+      },
+      {
+        "left_out_cell_id": "10-4",
+        "left_out_abs_error_cycles": 93.21401515151479,
+        "n_cells_used": 7,
+        "rmse_cycles": 48.647513769366704,
+        "mae_cycles": 43.160422077921986,
+        "delta_rmse_vs_full_cycles": -7.538468459579747,
+        "delta_mae_vs_full_cycles": -6.256699134199103
+      },
+      {
+        "left_out_cell_id": "10-5",
+        "left_out_abs_error_cycles": 56.81962121212109,
+        "n_cells_used": 7,
+        "rmse_cycles": 56.094878092596666,
+        "mae_cycles": 48.35962121212109,
+        "delta_rmse_vs_full_cycles": -0.09110413634978443,
+        "delta_mae_vs_full_cycles": -1.0574999999999974
+      },
+      {
+        "left_out_cell_id": "10-6",
+        "left_out_abs_error_cycles": 31.88742424242446,
+        "n_cells_used": 7,
+        "rmse_cycles": 58.84375069068875,
+        "mae_cycles": 51.921363636363466,
+        "delta_rmse_vs_full_cycles": 2.6577684617423003,
+        "delta_mae_vs_full_cycles": 2.5042424242423778
+      },
+      {
+        "left_out_cell_id": "10-7",
+        "left_out_abs_error_cycles": 5.726515151515059,
+        "n_cells_used": 7,
+        "rmse_cycles": 60.02633209858981,
+        "mae_cycles": 55.658636363636234,
+        "delta_rmse_vs_full_cycles": 3.8403498696433616,
+        "delta_mae_vs_full_cycles": 6.241515151515145
+      },
+      {
+        "left_out_cell_id": "10-8",
+        "left_out_abs_error_cycles": 44.74015151515118,
+        "n_cells_used": 7,
+        "rmse_cycles": 57.63584652757742,
+        "mae_cycles": 50.085259740259644,
+        "delta_rmse_vs_full_cycles": 1.4498642986309704,
+        "delta_mae_vs_full_cycles": 0.6681385281385559
+      }
+    ]
+  },
+  "artifacts": {
+    "report_md": "C:\\Users\\ROG\\Desktop\\paper\\codex\\strict-eol-robustness-v1\\strict-eol-robustness-v1_report.md",
+    "summary_json": "C:\\Users\\ROG\\Desktop\\paper\\codex\\strict-eol-robustness-v1\\strict-eol-robustness-v1_summary.json",
+    "per_cell_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\strict-eol-robustness-v1\\strict-eol-robustness-v1_per_cell.csv",
+    "leave_one_cell_out_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\strict-eol-robustness-v1\\strict-eol-robustness-v1_leave_one_cell_out.csv",
+    "bootstrap_metrics_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\strict-eol-robustness-v1\\strict-eol-robustness-v1_bootstrap_metrics.csv",
+    "scatter_png": "C:\\Users\\ROG\\Desktop\\paper\\codex\\strict-eol-robustness-v1\\strict-eol-robustness-v1_predicted_vs_true_eol.png",
+    "abs_error_png": "C:\\Users\\ROG\\Desktop\\paper\\codex\\strict-eol-robustness-v1\\strict-eol-robustness-v1_per_cell_abs_error.png",
+    "bootstrap_rmse_png": "C:\\Users\\ROG\\Desktop\\paper\\codex\\strict-eol-robustness-v1\\strict-eol-robustness-v1_bootstrap_rmse_distribution.png"
+  }
+}

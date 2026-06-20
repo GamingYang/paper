@@ -1,0 +1,892 @@
+{
+  "run_name": "cell-level-eol-fingerprint-v1",
+  "finished_at": "2026-06-03T14:25:17",
+  "elapsed_seconds": 49.7568416595459,
+  "data_dir": "C:\\Users\\ROG\\Desktop\\paper\\PYthon训练代码\\processed_clean",
+  "summary_rows": [
+    {
+      "model": "ridge",
+      "protocol": "source_only",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 218.23125251417628,
+      "target_adapt_eol_mae": 185.65567279344108,
+      "target_test_eol_rmse": 211.50086313373154,
+      "target_test_eol_mae": 180.69834055028878
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_only",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 316.4933095246449,
+      "target_adapt_eol_mae": 248.675869902681,
+      "target_test_eol_rmse": 248.80460953757472,
+      "target_test_eol_mae": 192.43459324620983
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_only",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 245.96509298497892,
+      "target_adapt_eol_mae": 186.88038086297598,
+      "target_test_eol_rmse": 180.77779715501165,
+      "target_test_eol_mae": 135.19933810451363
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_only",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 1726.6850246998254,
+      "target_adapt_eol_mae": 1716.2673308681497,
+      "target_test_eol_rmse": 1454.489440499269,
+      "target_test_eol_mae": 1412.2019219233268
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_only",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 226.74445560498344,
+      "target_adapt_eol_mae": 172.79915061327478,
+      "target_test_eol_rmse": 210.99120413674848,
+      "target_test_eol_mae": 178.35410520382393
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_only",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 255.92950042177424,
+      "target_adapt_eol_mae": 203.86526669973554,
+      "target_test_eol_rmse": 198.95312657686986,
+      "target_test_eol_mae": 150.73454993386233
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_only",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 254.30243970387937,
+      "target_adapt_eol_mae": 199.07292352749775,
+      "target_test_eol_rmse": 199.78576593678733,
+      "target_test_eol_mae": 146.93863424449458
+    },
+    {
+      "model": "ridge",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 194.7236379454376,
+      "target_adapt_eol_mae": 161.06931264860341,
+      "target_test_eol_rmse": 198.47389142311593,
+      "target_test_eol_mae": 174.15107845666483
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 189.54678716347817,
+      "target_adapt_eol_mae": 126.28443601318091,
+      "target_test_eol_rmse": 225.7541109876598,
+      "target_test_eol_mae": 184.76027770803285
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 194.72656800160124,
+      "target_adapt_eol_mae": 123.37627792543407,
+      "target_test_eol_rmse": 158.7260269091468,
+      "target_test_eol_mae": 132.6616124231454
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 1523.3603847858199,
+      "target_adapt_eol_mae": 1508.5598473440027,
+      "target_test_eol_rmse": 1386.5859002944603,
+      "target_test_eol_mae": 1340.1832308352666
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 44.2834805475913,
+      "target_adapt_eol_mae": 24.64456716084817,
+      "target_test_eol_rmse": 193.98509328939215,
+      "target_test_eol_mae": 168.20069908794918
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 98.605463576635,
+      "target_adapt_eol_mae": 60.82650226972078,
+      "target_test_eol_rmse": 165.7407610365329,
+      "target_test_eol_mae": 121.25264870430468
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 50,
+      "target_adapt_eol_rmse": 136.55568100443804,
+      "target_adapt_eol_mae": 87.44530216864806,
+      "target_test_eol_rmse": 171.71101431852065,
+      "target_test_eol_mae": 130.93431994135264
+    },
+    {
+      "model": "ridge",
+      "protocol": "source_only",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 184.91771153320673,
+      "target_adapt_eol_mae": 153.22826167552213,
+      "target_test_eol_rmse": 204.8149272220789,
+      "target_test_eol_mae": 170.79946824493734
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_only",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 228.84569287845238,
+      "target_adapt_eol_mae": 191.0424092588724,
+      "target_test_eol_rmse": 192.8888180419792,
+      "target_test_eol_mae": 151.31734077452333
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_only",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 197.44627694138708,
+      "target_adapt_eol_mae": 149.71409843529023,
+      "target_test_eol_rmse": 138.6582584157277,
+      "target_test_eol_mae": 114.60082456800475
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_only",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 1821.9401425049487,
+      "target_adapt_eol_mae": 1815.2427261720227,
+      "target_test_eol_rmse": 1516.8261654077603,
+      "target_test_eol_mae": 1480.0003336423563
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_only",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 199.11427509221463,
+      "target_adapt_eol_mae": 140.00767895299165,
+      "target_test_eol_rmse": 188.4150172948426,
+      "target_test_eol_mae": 148.93140547646792
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_only",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 266.4656926752617,
+      "target_adapt_eol_mae": 215.25147652116388,
+      "target_test_eol_rmse": 195.69543671233222,
+      "target_test_eol_mae": 142.24352240410045
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_only",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 247.80432398723258,
+      "target_adapt_eol_mae": 170.84086474701306,
+      "target_test_eol_rmse": 165.8419286184724,
+      "target_test_eol_mae": 138.90048815271598
+    },
+    {
+      "model": "ridge",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 149.00768876372643,
+      "target_adapt_eol_mae": 131.6207843559819,
+      "target_test_eol_rmse": 186.6245620589652,
+      "target_test_eol_mae": 156.4089916158862
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 102.75183656865978,
+      "target_adapt_eol_mae": 92.66304115928813,
+      "target_test_eol_rmse": 178.34944639414294,
+      "target_test_eol_mae": 124.08641722339539
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 125.76114293647404,
+      "target_adapt_eol_mae": 86.46286122336562,
+      "target_test_eol_rmse": 133.4933577768003,
+      "target_test_eol_mae": 121.8275408130728
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 1617.5470638667502,
+      "target_adapt_eol_mae": 1607.5477514784402,
+      "target_test_eol_rmse": 1458.6909534028755,
+      "target_test_eol_mae": 1420.264972622166
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 29.517172999966487,
+      "target_adapt_eol_mae": 19.01355302646911,
+      "target_test_eol_rmse": 161.52221077784284,
+      "target_test_eol_mae": 137.26217461254618
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 94.29845484846506,
+      "target_adapt_eol_mae": 63.22007336760467,
+      "target_test_eol_rmse": 152.46194327166054,
+      "target_test_eol_mae": 124.01891932720011
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 100,
+      "target_adapt_eol_rmse": 102.7651343845445,
+      "target_adapt_eol_mae": 69.75297002217079,
+      "target_test_eol_rmse": 140.94252181962497,
+      "target_test_eol_mae": 127.22970781716046
+    },
+    {
+      "model": "ridge",
+      "protocol": "source_only",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 199.6458045719132,
+      "target_adapt_eol_mae": 146.09833846806018,
+      "target_test_eol_rmse": 214.1416561803335,
+      "target_test_eol_mae": 170.05110655016733
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_only",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 204.6295195947454,
+      "target_adapt_eol_mae": 167.84547424844632,
+      "target_test_eol_rmse": 274.3453235211593,
+      "target_test_eol_mae": 223.82103286827385
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_only",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 162.95919481399628,
+      "target_adapt_eol_mae": 134.71188973140755,
+      "target_test_eol_rmse": 209.45342552913843,
+      "target_test_eol_mae": 176.72114182182315
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_only",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 1813.9624837830422,
+      "target_adapt_eol_mae": 1808.5785580056695,
+      "target_test_eol_rmse": 1528.9302060349883,
+      "target_test_eol_mae": 1496.2805573961118
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_only",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 202.09712230878074,
+      "target_adapt_eol_mae": 151.37956033549779,
+      "target_test_eol_rmse": 188.1644700559922,
+      "target_test_eol_mae": 143.6341460918576
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_only",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 226.7454286866244,
+      "target_adapt_eol_mae": 149.02080125661365,
+      "target_test_eol_rmse": 196.85643443751638,
+      "target_test_eol_mae": 136.06480968915312
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_only",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 147.03177820930478,
+      "target_adapt_eol_mae": 109.4587445997063,
+      "target_test_eol_rmse": 170.2438423573672,
+      "target_test_eol_mae": 140.6670768443382
+    },
+    {
+      "model": "ridge",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 134.47573865989025,
+      "target_adapt_eol_mae": 112.66682213905801,
+      "target_test_eol_rmse": 183.67692865845578,
+      "target_test_eol_mae": 153.62893135274516
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 101.6663216076064,
+      "target_adapt_eol_mae": 90.3880384748889,
+      "target_test_eol_rmse": 250.5954481490933,
+      "target_test_eol_mae": 196.19447881084687
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 144.25052738822262,
+      "target_adapt_eol_mae": 121.95668637113164,
+      "target_test_eol_rmse": 193.43212272765948,
+      "target_test_eol_mae": 164.61222867974212
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 1636.9888385713043,
+      "target_adapt_eol_mae": 1630.1928079700394,
+      "target_test_eol_rmse": 1481.7944563412602,
+      "target_test_eol_mae": 1447.9416724280834
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 26.0964089088999,
+      "target_adapt_eol_mae": 13.753841284872635,
+      "target_test_eol_rmse": 152.63588408320723,
+      "target_test_eol_mae": 134.48649502186257
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 79.08702777961973,
+      "target_adapt_eol_mae": 45.8169102332854,
+      "target_test_eol_rmse": 147.3330730094686,
+      "target_test_eol_mae": 115.85011745430504
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 200,
+      "target_adapt_eol_rmse": 60.64010946957779,
+      "target_adapt_eol_mae": 52.172228238329126,
+      "target_test_eol_rmse": 152.98057775711527,
+      "target_test_eol_mae": 131.8671525565154
+    },
+    {
+      "model": "ridge",
+      "protocol": "source_only",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 162.74237198711572,
+      "target_adapt_eol_mae": 123.82708008884191,
+      "target_test_eol_rmse": 215.42932887121088,
+      "target_test_eol_mae": 183.11980613249716
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_only",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 107.80123021925253,
+      "target_adapt_eol_mae": 93.62260671515565,
+      "target_test_eol_rmse": 245.6671568419948,
+      "target_test_eol_mae": 187.32146374464057
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_only",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 151.94734813011405,
+      "target_adapt_eol_mae": 117.35047934972656,
+      "target_test_eol_rmse": 140.48710908038075,
+      "target_test_eol_mae": 120.2284599634626
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_only",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 1816.1188241030093,
+      "target_adapt_eol_mae": 1809.370412323994,
+      "target_test_eol_rmse": 1556.606366840875,
+      "target_test_eol_mae": 1526.5855898615155
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_only",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 165.58097116137947,
+      "target_adapt_eol_mae": 121.18252468133758,
+      "target_test_eol_rmse": 197.85473689986074,
+      "target_test_eol_mae": 162.40337118321492
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_only",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 217.4659801225681,
+      "target_adapt_eol_mae": 156.68576488095266,
+      "target_test_eol_rmse": 198.1839379584683,
+      "target_test_eol_mae": 145.50661289173803
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_only",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 185.69035180988027,
+      "target_adapt_eol_mae": 140.53360374556758,
+      "target_test_eol_rmse": 229.0810232107493,
+      "target_test_eol_mae": 175.96747041539246
+    },
+    {
+      "model": "ridge",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 113.16541097505306,
+      "target_adapt_eol_mae": 97.02507778030568,
+      "target_test_eol_rmse": 190.28223386602056,
+      "target_test_eol_mae": 160.96983386293417
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 61.02363540222284,
+      "target_adapt_eol_mae": 48.474331260199534,
+      "target_test_eol_rmse": 231.03680390983118,
+      "target_test_eol_mae": 180.78198719018292
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 153.43005383221953,
+      "target_adapt_eol_mae": 124.63923026275478,
+      "target_test_eol_rmse": 169.3616507926734,
+      "target_test_eol_mae": 150.6097063895289
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 1644.0793582450913,
+      "target_adapt_eol_mae": 1635.7268722312563,
+      "target_test_eol_rmse": 1513.062428792487,
+      "target_test_eol_mae": 1481.6366991988257
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 21.013604598155073,
+      "target_adapt_eol_mae": 18.48127865190375,
+      "target_test_eol_rmse": 161.35343819471524,
+      "target_test_eol_mae": 143.07594059412762
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 70.81857761278657,
+      "target_adapt_eol_mae": 47.37068384740229,
+      "target_test_eol_rmse": 148.0297955270591,
+      "target_test_eol_mae": 127.47416227753692
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 300,
+      "target_adapt_eol_rmse": 71.36903802293892,
+      "target_adapt_eol_mae": 57.899690150465176,
+      "target_test_eol_rmse": 188.32430883588637,
+      "target_test_eol_mae": 160.34104731083397
+    },
+    {
+      "model": "ridge",
+      "protocol": "source_only",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 160.6106415402457,
+      "target_adapt_eol_mae": 132.5401768785917,
+      "target_test_eol_rmse": 139.1001536272061,
+      "target_test_eol_mae": 113.36652688908677
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_only",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 141.12949575053707,
+      "target_adapt_eol_mae": 115.79946668022973,
+      "target_test_eol_rmse": 129.9918352431056,
+      "target_test_eol_mae": 108.57311937719004
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_only",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 118.41625359183587,
+      "target_adapt_eol_mae": 111.68011476283434,
+      "target_test_eol_rmse": 101.43332646801673,
+      "target_test_eol_mae": 67.26829516447975
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_only",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 1803.3182978950242,
+      "target_adapt_eol_mae": 1799.7114756947221,
+      "target_test_eol_rmse": 1575.3772754598688,
+      "target_test_eol_mae": 1547.3624716027489
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_only",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 105.14183848547519,
+      "target_adapt_eol_mae": 97.18084722222241,
+      "target_test_eol_rmse": 90.07397260667969,
+      "target_test_eol_mae": 66.76975198412663
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_only",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 106.83392323456637,
+      "target_adapt_eol_mae": 92.21928025793682,
+      "target_test_eol_rmse": 93.0180782789869,
+      "target_test_eol_mae": 75.27375264550273
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_only",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 123.9940882827976,
+      "target_adapt_eol_mae": 99.94424921465554,
+      "target_test_eol_rmse": 101.76852008045532,
+      "target_test_eol_mae": 82.64363397196013
+    },
+    {
+      "model": "ridge",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 110.24550283207877,
+      "target_adapt_eol_mae": 91.30901657242205,
+      "target_test_eol_rmse": 110.71426350838195,
+      "target_test_eol_mae": 93.26235412568403
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 89.1244829886892,
+      "target_adapt_eol_mae": 61.40173828050837,
+      "target_test_eol_rmse": 116.89891436296307,
+      "target_test_eol_mae": 87.25364474129964
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 100.341299107031,
+      "target_adapt_eol_mae": 85.69287764431303,
+      "target_test_eol_rmse": 104.26920088835298,
+      "target_test_eol_mae": 90.07428638085838
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 1625.7436936826498,
+      "target_adapt_eol_mae": 1621.28351189317,
+      "target_test_eol_rmse": 1532.3178719356104,
+      "target_test_eol_mae": 1503.008109518949
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 25.590993439208972,
+      "target_adapt_eol_mae": 19.488590277777945,
+      "target_test_eol_rmse": 77.07698831481201,
+      "target_test_eol_mae": 59.38821527777759
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 35.36170500240646,
+      "target_adapt_eol_mae": 31.13596511243412,
+      "target_test_eol_rmse": 90.27127754330465,
+      "target_test_eol_mae": 70.75593799603158
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 500,
+      "target_adapt_eol_rmse": 44.121000778211865,
+      "target_adapt_eol_mae": 39.89949501378169,
+      "target_test_eol_rmse": 87.29727713798493,
+      "target_test_eol_mae": 71.45145979431499
+    },
+    {
+      "model": "ridge",
+      "protocol": "source_only",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 126.32210415853922,
+      "target_adapt_eol_mae": 92.79591261724738,
+      "target_test_eol_rmse": 150.16730251445875,
+      "target_test_eol_mae": 134.25874105170968
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_only",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 180.34046337642067,
+      "target_adapt_eol_mae": 168.34536856804252,
+      "target_test_eol_rmse": 182.66061599347358,
+      "target_test_eol_mae": 150.6569696179607
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_only",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 210.2679041423936,
+      "target_adapt_eol_mae": 174.32454124055047,
+      "target_test_eol_rmse": 195.21268392925748,
+      "target_test_eol_mae": 140.34254555435163
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_only",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 1767.592205730346,
+      "target_adapt_eol_mae": 1763.6151706534097,
+      "target_test_eol_rmse": 1571.0889431782432,
+      "target_test_eol_mae": 1548.109981325054
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_only",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 96.99725780158042,
+      "target_adapt_eol_mae": 83.48798611111116,
+      "target_test_eol_rmse": 151.24020599067524,
+      "target_test_eol_mae": 89.35527777777753
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_only",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 117.10647193373443,
+      "target_adapt_eol_mae": 101.93799685846574,
+      "target_test_eol_rmse": 154.18005242254253,
+      "target_test_eol_mae": 95.44172635581987
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_only",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 111.05559514043976,
+      "target_adapt_eol_mae": 88.89478899347029,
+      "target_test_eol_rmse": 137.6907265287405,
+      "target_test_eol_mae": 82.52286966017277
+    },
+    {
+      "model": "ridge",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 84.91842143298645,
+      "target_adapt_eol_mae": 58.39341388749415,
+      "target_test_eol_rmse": 132.92152706359607,
+      "target_test_eol_mae": 118.69836437172742
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 62.34285179828798,
+      "target_adapt_eol_mae": 54.417781725790235,
+      "target_test_eol_rmse": 160.1097103349724,
+      "target_test_eol_mae": 130.92971471939353
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 23.951862985024,
+      "target_adapt_eol_mae": 20.322928093785265,
+      "target_test_eol_rmse": 97.61295408890801,
+      "target_test_eol_mae": 76.49961484088158
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 1589.1061385410735,
+      "target_adapt_eol_mae": 1583.9777403055887,
+      "target_test_eol_rmse": 1522.7043362771044,
+      "target_test_eol_mae": 1498.0852642819682
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 14.778573789064094,
+      "target_adapt_eol_mae": 13.306756944444487,
+      "target_test_eol_rmse": 137.1261515027237,
+      "target_test_eol_mae": 82.4378124999999
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 36.67239075686976,
+      "target_adapt_eol_mae": 30.025340803872353,
+      "target_test_eol_rmse": 148.2131236399138,
+      "target_test_eol_mae": 89.75055391714739
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 800,
+      "target_adapt_eol_rmse": 34.239425541843175,
+      "target_adapt_eol_mae": 30.973593354964805,
+      "target_test_eol_rmse": 138.72427218964378,
+      "target_test_eol_mae": 81.33760640493136
+    },
+    {
+      "model": "ridge",
+      "protocol": "source_only",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 125.27175198175227,
+      "target_adapt_eol_mae": 95.30352273640455,
+      "target_test_eol_rmse": 175.3585814159906,
+      "target_test_eol_mae": 143.28150474172628
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_only",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 114.36822056741292,
+      "target_adapt_eol_mae": 94.71340951185582,
+      "target_test_eol_rmse": 244.67378579991097,
+      "target_test_eol_mae": 181.00507087976138
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_only",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 237.31612500359648,
+      "target_adapt_eol_mae": 186.8316458904733,
+      "target_test_eol_rmse": 243.68681602885744,
+      "target_test_eol_mae": 177.4833388090127
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_only",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 1752.523330729874,
+      "target_adapt_eol_mae": 1748.3762249924764,
+      "target_test_eol_rmse": 1568.485078060752,
+      "target_test_eol_mae": 1549.7563225806239
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_only",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 77.599095471602,
+      "target_adapt_eol_mae": 66.30543055555572,
+      "target_test_eol_rmse": 62.6428606402921,
+      "target_test_eol_mae": 54.9864027777777
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_only",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 91.08237465722367,
+      "target_adapt_eol_mae": 73.47990443121756,
+      "target_test_eol_rmse": 76.97235017122374,
+      "target_test_eol_mae": 62.6526519510588
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_only",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 109.82027494316544,
+      "target_adapt_eol_mae": 87.6216768906074,
+      "target_test_eol_rmse": 52.498090046616156,
+      "target_test_eol_mae": 46.43865471211143
+    },
+    {
+      "model": "ridge",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 88.49353132815673,
+      "target_adapt_eol_mae": 64.93895699473157,
+      "target_test_eol_rmse": 153.77357564326095,
+      "target_test_eol_mae": 128.22664713098916
+    },
+    {
+      "model": "elastic_net",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 59.55863407563247,
+      "target_adapt_eol_mae": 48.21429501068786,
+      "target_test_eol_rmse": 212.05106534440299,
+      "target_test_eol_mae": 159.3931627726237
+    },
+    {
+      "model": "svr_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 75.83362903338329,
+      "target_adapt_eol_mae": 53.53254655055281,
+      "target_test_eol_rmse": 152.82333084891025,
+      "target_test_eol_mae": 117.04780226122239
+    },
+    {
+      "model": "kernel_ridge_rbf",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 1568.8153944098606,
+      "target_adapt_eol_mae": 1563.4698293398567,
+      "target_test_eol_rmse": 1515.9772176211554,
+      "target_test_eol_mae": 1495.2997690016405
+    },
+    {
+      "model": "extra_trees",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 12.263187803950863,
+      "target_adapt_eol_mae": 10.484902777777762,
+      "target_test_eol_rmse": 61.15630633243969,
+      "target_test_eol_mae": 54.66265972222189
+    },
+    {
+      "model": "random_forest",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 29.694993247187778,
+      "target_adapt_eol_mae": 19.055086640211442,
+      "target_test_eol_rmse": 63.1638855221876,
+      "target_test_eol_mae": 59.53971153499248
+    },
+    {
+      "model": "gbr",
+      "protocol": "source_plus_target_adapt",
+      "horizon": 1000,
+      "target_adapt_eol_rmse": 26.162675281135215,
+      "target_adapt_eol_mae": 20.232922797165514,
+      "target_test_eol_rmse": 59.60699123268474,
+      "target_test_eol_mae": 52.349071385095954
+    }
+  ],
+  "summary_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\rul-eol-experiments-v1\\cell-level-eol-fingerprint-v1_summary.csv",
+  "pred_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\rul-eol-experiments-v1\\cell-level-eol-fingerprint-v1_test_cell_predictions.csv"
+}
