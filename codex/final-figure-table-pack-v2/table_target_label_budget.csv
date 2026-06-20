@@ -1,0 +1,6 @@
+labeled_batch9_cells,n_predefined_subsets,subset_generation_strategy,batch10_rmse_mean_cycles,batch10_rmse_median_cycles,batch10_rmse_iqr_cycles,batch10_rmse_range_cycles,batch10_mae_mean_cycles,batch10_mae_median_cycles,batch10_mae_range_cycles,source_artifact,safe_interpretation
+0,1,source_only,64.27,64.27,64.27-64.27,64.27-64.27,55.21,55.21,55.21-55.21,target-label-budget-sensitivity-v1/budget_aggregate_results.csv,Sensitivity aggregate only; no subset is selected or promoted by Batch10.
+1,8,all_combinations,61.17,60.86,59.18-63.71,57.74-64.20,54.30,54.11,48.63-58.04,target-label-budget-sensitivity-v1/budget_aggregate_results.csv,Sensitivity aggregate only; no subset is selected or promoted by Batch10.
+2,28,all_combinations,60.55,60.42,57.92-62.49,54.45-66.24,53.91,53.91,46.15-60.72,target-label-budget-sensitivity-v1/budget_aggregate_results.csv,Sensitivity aggregate only; no subset is selected or promoted by Batch10.
+4,70,all_combinations,59.64,59.46,56.42-62.54,51.99-67.91,53.20,53.55,43.94-62.70,target-label-budget-sensitivity-v1/budget_aggregate_results.csv,Sensitivity aggregate only; no subset is selected or promoted by Batch10.
+8,1,all_combinations,56.19,56.19,56.19-56.19,56.19-56.19,49.42,49.42,49.42-49.42,target-label-budget-sensitivity-v1/budget_aggregate_results.csv,Sensitivity aggregate only; no subset is selected or promoted by Batch10.
