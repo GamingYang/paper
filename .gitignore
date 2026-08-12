@@ -20,6 +20,7 @@ env/
 *.log
 *.pid
 _tmp*.txt
+.codex_tmp_*.py
 ~$*.docx
 
 # Large raw/intermediate datasets
@@ -35,6 +36,11 @@ our_data/
 *.pkl
 *.joblib
 
+# Heavy generated image/document intermediates
+*.tif
+*.tiff
+*.wmf
+
 # Generated experiment outputs that should be reproducible from scripts
 **/target_test_predictions*.csv
 **/*target_test_predictions*.csv
@@ -48,6 +54,11 @@ codex/bubble-sort-20260423/
 # Independent external projects kept locally, not part of this paper repo
 PaperSpine-main/
 ml-intern-main/
+Visio-copy-main/
+paper-plot-skills-main/
+paper_rewriting_output/
+paper_spine_materials/
+skills/
 
 # Duplicate copy of the external baseline project
 HAIRLAB-Health_status_prediction-8e9073e/
@@ -56,3 +67,57 @@ HAIRLAB-Health_status_prediction-8e9073e/
 Health_status_prediction-main/data/
 Health_status_prediction-main/model/
 Health_status_prediction-main/*.ipynb
+Health_status_prediction-main/
+
+# Local literature, draft, and drawing folders
+runs/
+AI生成的初稿插图/
+GPT综述文献/
+attention机制flowchart图/
+txt文本阅读/
+visio绘图/
+word文件/
+zjc群内其他手稿/
+参考文献/
+Real-time personalized health status prediction of.pdf
+applied energy上的期刊文章.pdf
+
+# Codex local-only workspaces and generated QA/export folders
+codex/_qa*/
+codex/translation_work/
+codex/external-advanced-method-reproduction-v1/
+review_soh_zjc_*/
+review_zjc_*/
+codex_battery_project_smoke_result.*
+codex/scheme_a_one_epoch_smoke_*.json
+codex/scheme_a_one_epoch_smoke_*.xlsx
+
+# Bulk manuscript conversion assets; the DOCX is the authoritative manuscript
+codex/final-draft/zjc8.4_SOH_prediction_English_assets/
+
+# Local reference packs and obsolete draft versions inside the SOH writing folder
+codex/7.20初稿修改/reference/
+codex/7.20初稿修改/复现参考论文/
+codex/7.20初稿修改/zjc7*.docx
+codex/7.20初稿修改/zjc7*.pdf
+codex/7.20初稿修改/zjc8.2*.docx
+codex/初稿撰写manuscript/
+
+# Local Codex style/skill development folders, not paper evidence
+codex/teacher-paper-style-skill/
+codex/zhuang-sci-style/
+
+# Retired RUL/EOL line; the active repository focus is SOH-only
+codex/*RUL*.md
+codex/*EOL*.md
+codex/rul-*/
+codex/rul-*-v*/
+codex/rul-eol-experiments-v*/
+codex/rul-baseline-suite-v*/
+codex/feature-horizon-leakage-defense-v*/
+codex/final-figure-table-pack-v*/
+codex/leakage-negative-control-v*/
+codex/manuscript-v*-and-supplement-v*/
+codex/strict-eol-*/
+codex/strict-raw-provenance-v*/
+codex/target-label-budget-sensitivity-v*/
