@@ -1,0 +1,12 @@
+{
+  "experiment": "soh-physical-degree-ablation-v1",
+  "completed_degrees": [
+    3
+  ],
+  "requested_degrees": [
+    3
+  ],
+  "remaining_degrees": [],
+  "error": null,
+  "updated_at": "2026-06-21T23:02:31"
+}

@@ -1,0 +1,121 @@
+{
+  "result": {
+    "model": "stage-aware-branch-attention-v1-seed7",
+    "seed": 7,
+    "variant": "stage-aware-branch-attention-v1",
+    "attention_type": "stage_branch",
+    "description": "Physical-residual SOH model with an explicit degradation-stage branch that modulates temporal features before attention.",
+    "best_epoch": 140,
+    "target_adapt_rmse": 0.006668883228575113,
+    "target_test_rmse": 0.009211909036651157,
+    "target_test_macro_rmse": 0.00815298244466655,
+    "target_test_mae": 0.0057692923583090305,
+    "target_test_mape": 0.6174735426902771,
+    "target_test_early_rmse": 0.003738309289761757,
+    "target_test_mid_rmse": 0.012388970996720781,
+    "target_test_late_rmse": 0.0227933202073296,
+    "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\advanced-attention-candidates-v1\\stage-aware-branch-attention-v1-seed7\\stage-aware-branch-attention-v1-seed7_best.pt",
+    "history_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\advanced-attention-candidates-v1\\stage-aware-branch-attention-v1-seed7\\stage-aware-branch-attention-v1-seed7_history.csv",
+    "elapsed_min": 17.0
+  },
+  "target_test_cells": [
+    {
+      "battery_index": 69,
+      "rmse": 0.005676397070938776,
+      "mae": 0.00359050533734262,
+      "n_points": 1702
+    },
+    {
+      "battery_index": 70,
+      "rmse": 0.005802268027776415,
+      "mae": 0.004045854322612286,
+      "n_points": 1697
+    },
+    {
+      "battery_index": 71,
+      "rmse": 0.007563099600480456,
+      "mae": 0.0044126203283667564,
+      "n_points": 1848
+    },
+    {
+      "battery_index": 72,
+      "rmse": 0.00886641469801243,
+      "mae": 0.005899449810385704,
+      "n_points": 1811
+    },
+    {
+      "battery_index": 73,
+      "rmse": 0.006553337647056823,
+      "mae": 0.004281415604054928,
+      "n_points": 2030
+    },
+    {
+      "battery_index": 74,
+      "rmse": 0.01607113441271879,
+      "mae": 0.012523006647825241,
+      "n_points": 2285
+    },
+    {
+      "battery_index": 75,
+      "rmse": 0.003466892624132203,
+      "mae": 0.0025824778713285923,
+      "n_points": 1783
+    },
+    {
+      "battery_index": 76,
+      "rmse": 0.011224315476216499,
+      "mae": 0.007322602439671755,
+      "n_points": 1400
+    }
+  ],
+  "target_adapt_cells": [
+    {
+      "battery_index": 61,
+      "rmse": 0.006130815487595481,
+      "mae": 0.00511697493493557,
+      "n_points": 2057
+    },
+    {
+      "battery_index": 62,
+      "rmse": 0.005918719477964092,
+      "mae": 0.004460996016860008,
+      "n_points": 2143
+    },
+    {
+      "battery_index": 63,
+      "rmse": 0.006899704170725209,
+      "mae": 0.005582955665886402,
+      "n_points": 1905
+    },
+    {
+      "battery_index": 64,
+      "rmse": 0.009963550017578727,
+      "mae": 0.0071084024384617805,
+      "n_points": 1975
+    },
+    {
+      "battery_index": 65,
+      "rmse": 0.005438860562361465,
+      "mae": 0.0038995500653982162,
+      "n_points": 2168
+    },
+    {
+      "battery_index": 66,
+      "rmse": 0.0053126562413081104,
+      "mae": 0.0040888055227696896,
+      "n_points": 1742
+    },
+    {
+      "battery_index": 67,
+      "rmse": 0.006509214466577633,
+      "mae": 0.0043103620409965515,
+      "n_points": 2012
+    },
+    {
+      "battery_index": 68,
+      "rmse": 0.006163699733417449,
+      "mae": 0.004449879284948111,
+      "n_points": 2308
+    }
+  ]
+}

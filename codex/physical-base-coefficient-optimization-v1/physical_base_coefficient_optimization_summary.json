@@ -1,0 +1,40 @@
+{
+  "data_protocol": "Batch 1-8 source training samples only",
+  "n_source_samples": 115256,
+  "n_source_cells": 61,
+  "source_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "global_max_cycle": 3000.0,
+  "coefficients_order": "a,b,c,d for a*p^3 + b*p^2 + c*p + d",
+  "coefficients": {
+    "a": 0.6018793043695602,
+    "b": -0.7450460029398712,
+    "c": -0.08879167350761516,
+    "d": 1.075761761669091
+  },
+  "source_rmse": 0.03657036591593278,
+  "source_mae": 0.02722956339026626,
+  "times_new_roman_path": "C:\\Windows\\Fonts\\times.ttf",
+  "figures": [
+    {
+      "path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\physical-base-coefficient-optimization-v1\\figures\\fig_physical_base_abcd_optimization_grid.png",
+      "width": 6152,
+      "height": 3171,
+      "mode": "RGBA"
+    },
+    {
+      "path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\physical-base-coefficient-optimization-v1\\figures\\fig_physical_base_source_fit.png",
+      "width": 4199,
+      "height": 2484,
+      "mode": "RGBA"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "result": {
+    "model": "adaptive-attention-no-mmd-seed123",
+    "seed": 123,
+    "variant": "adaptive-attention-no-mmd",
+    "description": "Adaptive attention without the MMD alignment penalty.",
+    "attention": "degradation-state-guided curve attention",
+    "best_epoch": 105,
+    "target_adapt_rmse": 0.008600043571543377,
+    "target_test_rmse": 0.00919453467743306,
+    "target_test_macro_rmse": 0.00795487434320577,
+    "target_test_mae": 0.00557500496506691,
+    "target_test_mape": 0.5983501076698303,
+    "target_test_early_rmse": 0.0036333540889991233,
+    "target_test_mid_rmse": 0.012099143938921824,
+    "target_test_late_rmse": 0.025772497875251765,
+    "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\adaptive-attention-final-controls-v1\\adaptive-attention-no-mmd-seed123\\adaptive-attention-no-mmd-seed123_best.pt",
+    "history_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\adaptive-attention-final-controls-v1\\adaptive-attention-no-mmd-seed123\\adaptive-attention-no-mmd-seed123_history.csv",
+    "elapsed_min": 12.4
+  },
+  "target_test_cells": [
+    {
+      "battery_index": 69,
+      "rmse": 0.009926372985961246,
+      "mae": 0.00684268306940794,
+      "n_points": 1702
+    },
+    {
+      "battery_index": 70,
+      "rmse": 0.0056095016282234735,
+      "mae": 0.003698827000334859,
+      "n_points": 1697
+    },
+    {
+      "battery_index": 71,
+      "rmse": 0.007517708839698945,
+      "mae": 0.004065362736582756,
+      "n_points": 1848
+    },
+    {
+      "battery_index": 72,
+      "rmse": 0.006264105772938608,
+      "mae": 0.0036262136418372393,
+      "n_points": 1811
+    },
+    {
+      "battery_index": 73,
+      "rmse": 0.004848857065138124,
+      "mae": 0.0033922316506505013,
+      "n_points": 2030
+    },
+    {
+      "battery_index": 74,
+      "rmse": 0.016957411929951875,
+      "mae": 0.012427141889929771,
+      "n_points": 2285
+    },
+    {
+      "battery_index": 75,
+      "rmse": 0.004094120174915478,
+      "mae": 0.0031419445294886827,
+      "n_points": 1783
+    },
+    {
+      "battery_index": 76,
+      "rmse": 0.008420916348818409,
+      "mae": 0.005901726428419352,
+      "n_points": 1400
+    }
+  ],
+  "target_adapt_cells": [
+    {
+      "battery_index": 61,
+      "rmse": 0.006116816511858206,
+      "mae": 0.004059402737766504,
+      "n_points": 2057
+    },
+    {
+      "battery_index": 62,
+      "rmse": 0.008814033658445464,
+      "mae": 0.005306939594447613,
+      "n_points": 2143
+    },
+    {
+      "battery_index": 63,
+      "rmse": 0.004617723538120123,
+      "mae": 0.0034303979482501745,
+      "n_points": 1905
+    },
+    {
+      "battery_index": 64,
+      "rmse": 0.00864550914942676,
+      "mae": 0.005278150551021099,
+      "n_points": 1975
+    },
+    {
+      "battery_index": 65,
+      "rmse": 0.005227695009574978,
+      "mae": 0.0032784538343548775,
+      "n_points": 2168
+    },
+    {
+      "battery_index": 66,
+      "rmse": 0.012808112356864586,
+      "mae": 0.007346021942794323,
+      "n_points": 1742
+    },
+    {
+      "battery_index": 67,
+      "rmse": 0.012783705086429556,
+      "mae": 0.007591933477669954,
+      "n_points": 2012
+    },
+    {
+      "battery_index": 68,
+      "rmse": 0.006608097355504563,
+      "mae": 0.004598021507263184,
+      "n_points": 2308
+    }
+  ]
+}

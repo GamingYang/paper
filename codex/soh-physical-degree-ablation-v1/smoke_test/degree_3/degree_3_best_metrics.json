@@ -1,0 +1,144 @@
+{
+  "summary": {
+    "experiment": "soh-physical-degree-ablation-v1",
+    "status": "success",
+    "degree": 3,
+    "protocol": "Source supervised residual training + Batch 9 target_adapt MMD/model selection + Batch 10 blind-test reporting once after checkpoint is fixed",
+    "python_executable": "D:\\Anaconda\\envs\\battery_project\\python.exe",
+    "device": "cuda",
+    "data_dir": "C:\\Users\\ROG\\Desktop\\paper\\PYthon训练代码\\processed_clean",
+    "label_mode": "nominal",
+    "data_protocol": "processed_clean_fixed_split",
+    "seed": 42,
+    "epochs": 2,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "target_mmd_weight": 5e-05,
+    "lambda_smooth": 0.0,
+    "max_train_batches": 3,
+    "max_smoke_samples": 512,
+    "smoke": true,
+    "started_at": "2026-06-21T23:02:29",
+    "finished_at": "2026-06-21T23:02:30",
+    "best_epoch_selected_by_batch9_target_adapt": 1,
+    "batch9_target_adapt_rmse": 0.006338384681869032,
+    "batch9_target_adapt_macro_rmse": 0.006338384681869032,
+    "batch9_target_adapt_mae": 0.004018721636384726,
+    "batch9_target_adapt_mape_percent": 0.3676764667034149,
+    "batch10_target_test_pooled_rmse": 0.030763846467623257,
+    "batch10_target_test_macro_rmse": 0.030763846467623257,
+    "batch10_target_test_mae": 0.030609052628278732,
+    "batch10_target_test_mape_percent": 2.926907777786255,
+    "base_coeffs": "[0.6018793044105043, -0.7450460029841515, -0.08879167350788182, 1.0757617616734536]",
+    "checkpoint_path": "C:\\Users\\ROG\\Desktop\\paper\\codex\\soh-physical-degree-ablation-v1\\smoke_test\\degree_3\\degree_3_best_by_target_adapt.pt",
+    "history_csv": "C:\\Users\\ROG\\Desktop\\paper\\codex\\soh-physical-degree-ablation-v1\\smoke_test\\degree_3\\degree_3_history.csv",
+    "result_xlsx": "C:\\Users\\ROG\\Desktop\\paper\\codex\\soh-physical-degree-ablation-v1\\smoke_test\\degree_3\\degree_3_results.xlsx",
+    "coeff_p3": 0.6018793044105043,
+    "coeff_p2": -0.7450460029841515,
+    "coeff_p1": -0.08879167350788182,
+    "coeff_p0": 1.0757617616734536
+  },
+  "splits": [
+    {
+      "split": "source",
+      "samples": 115256,
+      "cells": 61,
+      "batches": "1,2,3,4,5,6,7,8",
+      "x_shape": "115256x100",
+      "y_min": 0.7997922301292419,
+      "y_max": 1.119725227355957,
+      "cycle_min": 1.0,
+      "cycle_max": 2689.0
+    },
+    {
+      "split": "target_adapt",
+      "samples": 16310,
+      "cells": 8,
+      "batches": "9",
+      "x_shape": "16310x100",
+      "y_min": 0.8000323176383972,
+      "y_max": 1.1138070821762085,
+      "cycle_min": 1.0,
+      "cycle_max": 2308.0
+    },
+    {
+      "split": "target_test",
+      "samples": 14556,
+      "cells": 8,
+      "batches": "10",
+      "x_shape": "14556x100",
+      "y_min": 0.7997221350669861,
+      "y_max": 1.1222193241119385,
+      "cycle_min": 1.0,
+      "cycle_max": 2285.0
+    }
+  ],
+  "history": [
+    {
+      "degree": 3,
+      "epoch": 1,
+      "stage": "MSE Warmup",
+      "train_loss": 0.012915501526246468,
+      "train_mse": 0.012915501526246468,
+      "train_mmd": 0.0,
+      "mmd_weight": 0.0,
+      "lr": 0.001,
+      "target_adapt_pooled_rmse": 0.006338384681869032,
+      "target_adapt_macro_rmse": 0.006338384681869032,
+      "target_adapt_mae": 0.004018721636384726,
+      "target_adapt_mape_percent": 0.3676764667034149,
+      "best_epoch": 1,
+      "best_target_adapt_rmse": 0.006338384681869032
+    },
+    {
+      "degree": 3,
+      "epoch": 2,
+      "stage": "MSE Warmup",
+      "train_loss": 0.0023274746102591357,
+      "train_mse": 0.0023274746102591357,
+      "train_mmd": 0.0,
+      "mmd_weight": 0.0,
+      "lr": 0.001,
+      "target_adapt_pooled_rmse": 0.06255754414564285,
+      "target_adapt_macro_rmse": 0.06255754414564285,
+      "target_adapt_mae": 0.06233779713511467,
+      "target_adapt_mape_percent": 5.764984130859375,
+      "best_epoch": 1,
+      "best_target_adapt_rmse": 0.006338384681869032
+    }
+  ],
+  "metrics": [
+    {
+      "split": "target_adapt",
+      "pooled_rmse": 0.006338384681869032,
+      "macro_rmse": 0.006338384681869032,
+      "mae": 0.004018721636384726,
+      "mape_percent": 0.3676764667034149,
+      "role": "model_selection"
+    },
+    {
+      "split": "target_test",
+      "pooled_rmse": 0.030763846467623257,
+      "macro_rmse": 0.030763846467623257,
+      "mae": 0.030609052628278732,
+      "mape_percent": 2.926907777786255,
+      "role": "final_blind_test_once"
+    }
+  ],
+  "target_adapt_per_battery": [
+    {
+      "battery_index": 61,
+      "rmse": 0.006338384681869032,
+      "mae": 0.004018721636384726,
+      "n_points": 512
+    }
+  ],
+  "target_test_per_battery": [
+    {
+      "battery_index": 69,
+      "rmse": 0.030763846467623257,
+      "mae": 0.030609052628278732,
+      "n_points": 512
+    }
+  ]
+}
